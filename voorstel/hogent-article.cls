@@ -46,6 +46,7 @@
 \DeclareOptionX{onecolumn}{\@onecolumntrue\@twocolumnfalse}
 \DeclareOptionX{twocolumn}{\@onecolumnfalse\@twocolumntrue}
 \ExecuteOptionsX{twocolumn}
+\setlength{\emergencystretch}{3em}
 
 %% Pass unknown options to the parent class (article)
 \DeclareOptionX*{\PassOptionsToClass{\CurrentOption}{article}}
