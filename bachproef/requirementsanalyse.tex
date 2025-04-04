@@ -1,0 +1,105 @@
+\chapter{\IfLanguageName{dutch}{Interviews en requirementsanalyse}{Interviews and requirement analysis}}%
+\label{ch:requirementsanalyse}
+
+In dit hoofdstuk worden de resultaten besproken van de interviews met de technische staf en bestuur van Lindemans Aalst. Het doel is om de functionele en technische eisen in kaart te brengen die de club stelt aan een geautomatiseerd statistisch analysesysteem. De inzichten uit deze gesprekken vormen de basis voor een requirementsdocument, dat op zijn beurt dient als uitgangspunt voor de vergelijkende analyse van AI-systemen in de volgende fase.
+
+De vragen zijn gestructureerd rond vier kernonderwerpen: functionele en technische eisen, gebruik van AI en automatisering, barrières en implementatie-uitdagingen en gebruiksvriendelijkheid en toegankelijkheid. Het is belangrijk te vermelden dat niet iedereen elke vraag kreeg. Per functie werden de juiste vragen gesteld, zodat de antwoorden specifiek aansluiten bij de rol en verantwoordelijkheid van de geïnterviewde.
+
+Door deze gestructureerde aanpak wordt een helder beeld geschetst van de verwachtingen en behoeften van de technische staf, wat cruciaal is voor de verdere ontwikkeling en selectie van een geschikt AI-ondersteund statistisch systeem.
+
+\section{Inzichten van stakeholders}
+
+\subsection{Functionele en technische eisen}
+\begin{enumerate}
+  \item Welke statistieken zijn voor jullie het belangrijkst bij het analyseren van wedstrijden en trainingen?
+  \subsubsection{Interview met de coach}
+  Bij de analyse van wedstrijden en de scouting van tegenstanders worden verschillende prestatie-indicatoren geëvalueerd. Belangrijke factoren zijn de scoringspercentages in side-out en transitie, de gemaakte fouten en de rotaties waarin deze het meest voorkomen. Daarnaast wordt geanalyseerd in welke rotaties de tegenstander het meest effectief is en welke spelers in specifieke situaties het vaakst worden aangespeeld.
+
+  De rol van de setter is hierbij essentieel. Er wordt onderzocht welke keuzes hij maakt in verschillende recepties en rotaties, en in welke posities de tegenstander het hoogste scoringspercentage behaalt. Verder wordt gekeken naar de richtingen van de aanvallers, de verdedigingspatronen en de servicevariaties.
+  
+  Bij de vergelijking met het eigen team ligt de focus vooral op de receptie. Hierbij wordt geanalyseerd hoe spelers de service verwerken (links, rechts, boven- of onderhands) en of er zwakke punten zijn, zoals moeite met korte of diepe ballen of een voorkeur voor een specifieke kant. Deze informatie helpt om strategieën te optimaliseren en het eigen spel te verbeteren.
+
+  \item Welke data wordt momenteel handmatig verzameld, en welke processen zouden jullie willen automatiseren?
+  \subsubsection{Interview met de coach}
+  Scouting wordt steeds verder geautomatiseerd, waarbij data-invoer leidt tot automatische analyses, zoals de aanvalsrichtingen van spelers en de settercalls. Als de scouting goed wordt uitgevoerd, biedt dit direct inzicht in de verdedigingspatronen en aanvalsvoorkeuren van de tegenstander.
+
+  Hoewel automatisering veel werk uit handen neemt, blijft videobeelden analyseren een belangrijk voordeel. Hiermee kunnen specifieke patronen, zoals de aanvalsrichting van een speler, duidelijk worden geïdentificeerd. Scoutingsoftware en analysesystemen zorgen ervoor dat veel werk al vooraf wordt gedaan, waardoor de rol van handmatige scouting steeds kleiner wordt.
+
+  Als technologie zich verder ontwikkelt, zou scouting op termijn mogelijk volledig geautomatiseerd kunnen worden. Dit zou het proces efficiënter maken en de behoefte aan traditionele scouts verminderen.
+  \item Hoe gedetailleerd moeten de statistieken zijn? Zijn er specifieke metrics die momenteel ontbreken?
+  \subsubsection{Interview met de coach}
+  Hoewel scouting steeds meer wordt geautomatiseerd, zullen er altijd fouten blijven bestaan. De kwaliteit van de data hangt sterk af van de vaardigheden en ervaring van de scouter. Een goede scouter verzamelt nauwkeurigere en gedetailleerdere informatie dan iemand zonder expertise.
+
+  Het gebruik van één programma kan het aantal fouten verminderen, maar het blijft noodzakelijk om de gegevens te controleren en te vergelijken met de invoer van de huidige scouter. Door deze vergelijking kan worden bepaald in hoeverre de data betrouwbaar is en waar eventuele correcties nodig zijn.
+  \item Welke outputformaten (dashboards, rapporten, live feedback) zijn het meest bruikbaar voor de technische staf?
+  \subsubsection{Interview met de coach}
+  Scoutinggegevens geven inzicht in verschillende spelaspecten, zoals aanvalsrichtingen en de verdeling van de setter onder verschillende omstandigheden (goede, minder goede en slechte situaties, evenals transitie). Deze informatie wordt niet alleen voorafgaand aan de wedstrijd geanalyseerd, maar ook tijdens de wedstrijd gebruikt om aanpassingen te maken.
+
+  Tijdens de wedstrijd wordt onder andere gekeken naar servicepatronen en targets. Dit helpt bij het bepalen of er verschuivingen nodig zijn in de verdediging. Scouters zoals Joost en Erwin leveren deze informatie aan, samen met match- en setrapporten waarin wordt geanalyseerd welke patronen het meest zijn gespeeld. Deze gegevens vormen de basis voor verdere tactische beslissingen.
+  \item Hoe vaak moeten de statistieken bijgewerkt worden? Is real-time verwerking gewenst?
+  \subsubsection{Interview met de coach}
+  Real-time scouting is vooral tijdens de wedstrijd gewenst, idealiter zelfs binnen een set. Dit kan waardevolle inzichten opleveren, maar door het hoge tempo van het spel is het niet altijd even bruikbaar. Snelle analyses kunnen helpen bij tactische aanpassingen, maar de beperkte tijd maakt het moeilijk om alles direct te verwerken en toe te passen.
+\end{enumerate}
+
+\subsection{Gebruik van AI en automatisering}
+\begin{enumerate}
+  \item Welke technologieën gebruiken jullie momenteel voor statistieken en videoanalyse?
+  \item Wat zijn de grootste voordelen en nadelen van de huidige systemen?
+  \item In hoeverre staan de club open voor het gebruik van AI bij data-analyse?
+  \subsubsection{Interview met de manager}
+  De club staat zeker open voor nieuwe technologieën die kunnen helpen, zolang ze bijdragen aan betere prestaties. Een belangrijke factor blijft echter de kosten. De investering moet opwegen tegen de meerwaarde die het biedt. Het idee om zulke tools vanuit de liga overkoepelend verplicht te stellen, lijkt een goede benadering. Een testfase bij bepaalde clubs zou waardevolle inzichten opleveren, waarna het systeem breder geïmplementeerd kan worden, zodat alle teams er uiteindelijk van kunnen profiteren.
+  \item Hebben jullie eerder ervaring met AI-gestuurde sportstatistieken? Zo ja, hoe waren die ervaringen?
+  \subsubsection{Interview met de coach}
+  Er is geen ervaring met AI-gestuurde sportstatistieken.
+  \subsubsection{Interview met de manager}
+  Er is geen ervaring met AI-gestuurde sportstatistieken.
+  \item Welke taken zouden jullie het liefst volledig geautomatiseerd zien?
+  \subsubsection{Interview met de coach}
+  Richtingen van aanvallers en de beslissingen van de setter tijdens wedstrijden is wel belangrijk. Daar kan echt beslissingen op gebasseerd worden. 
+  \subsubsection{Interview met de manager}
+  Het zou ideaal zijn als het scoutingproces volledig geautomatiseerd is, zodat gegevens direct en zonder handmatige invoer beschikbaar zijn. Dit zou niet alleen de efficiëntie verbeteren, maar ook personeelskosten besparen, aangezien minder tijd besteed hoeft te worden aan handmatige data-invoer en analyse. Een systeem dat automatisch de juiste informatie verzamelt en verwerkt, maakt het voor clubs gemakkelijker om snel en effectief te reageren zonder extra middelen te moeten inzetten.
+\end{enumerate}
+
+
+\subsection{Barrières en implementatie-uitdagingen}
+\begin{enumerate}
+  \item Wat zijn de grootste uitdagingen bij het implementeren van nieuwe technologieën in jullie workflow?
+  \subsubsection{Interview met de coach}
+  Er is openheid voor nieuwe scoutingmethodes, maar een solide basiskennis blijft essentieel. Een belangrijk vergelijkingspunt is hoe de nieuwe methode zich verhoudt tot bestaande systemen zoals DataVolley. Als een nieuw systeem al goed ontwikkeld is en vroeg kan worden geïmplementeerd, zullen er waarschijnlijk weinig problemen optreden. Dit maakt snelle aanpassingen mogelijk. Uiteindelijk moet het systeem een verbetering zijn ten opzichte van de huidige werkwijze om effectief ingezet te worden.
+  \subsubsection{Interview met de manager}
+  Een belangrijk aandachtspunt bij het implementeren van geautomatiseerde systemen is de betrouwbaarheid, vooral tijdens wedstrijden. Aangezien de club veel met vrijwilligers werkt die niet altijd de technische kennis hebben om problemen op te lossen, kan een technisch probleem (zoals het uitvallen van het systeem) tijdens een match grote gevolgen hebben, omdat er dan geen statistieken meer beschikbaar zijn. Om dit te voorkomen, zou het handig zijn om een persoon met een technische achtergrond aan te stellen die in geval van problemen snel kan ingrijpen en de benodigde ondersteuning biedt. Dit garandeert dat het systeem soepel blijft draaien en de scoutingdata op cruciale momenten toegankelijk blijft.
+  \item Is er weerstand binnen de club tegen het gebruik van AI voor statistieken? Waarom wel/niet?
+  \subsubsection{Interview met de manager}
+  Er is geen weerstand tegen het gebruik van AI voor statistieken, zolang het systeem betrouwbaar is en de kosten in verhouding staan tot de voordelen. De club staat open voor nieuwe technologieën die kunnen helpen bij het verbeteren van prestaties en scoutingprocessen.
+  \item Hoeveel technische kennis is er binnen de staf aanwezig voor het werken met geavanceerde analysesystemen?
+  \subsubsection{Interview met de coach}
+  Er is een vrij grote technische kennis aanwezig bij de sportieve staf.
+  \subsubsection{Interview met de manager}
+  De club heeft een aantal mensen met technische kennis, maar het is belangrijk dat deze kennis ook beschikbaar is voor de vrijwilligers die met het systeem werken. Dit kan door training of ondersteuning te bieden aan de vrijwilligers, zodat zij ook in staat zijn om het systeem effectief te gebruiken en eventuele problemen op te lossen.
+
+  Daarnaast zou het nuttig zijn om bij het opbouwen van de zaal altijd iemand met technische expertise aanwezig te hebben. Deze persoon kan ervoor zorgen dat alles correct wordt ingesteld en goed functioneert, zodat er geen technische problemen ontstaan die het verzamelen van statistieken tijdens de wedstrijd kunnen verstoren.
+  \item Welke ondersteuning of training zou nodig zijn om het systeem optimaal te benutten?
+  \subsubsection{Interview met de manager}
+  Om ervoor te zorgen dat alle vrijwilligers effectief met het systeem kunnen werken, is het belangrijk om meerdere trainingssessies aan te bieden. Dit helpt niet alleen om de kennis te verspreiden, maar zorgt er ook voor dat iedereen vertrouwd raakt met het systeem en in staat is om eventuele technische problemen op te lossen. Het is duidelijk dat niet iedereen dezelfde technische kennis heeft, dus herhalende sessies kunnen ervoor zorgen dat alle vrijwilligers op hetzelfde niveau staan en beter voorbereid zijn om het systeem optimaal te gebruiken.
+  \item Zijn er specifieke privacy- of ethische bezwaren binnen de club met betrekking tot geautomatiseerde dataverzameling?
+  \subsubsection{Interview met de manager}
+  Er zijn geen bezwaren tegen geautomatiseerde dataverzameling. De General Data Protection Regulation (GDPR) heeft hier eigenlijk geen betrekkingen op.
+\end{enumerate}
+
+\subsection{Gebruiksvriendelijkheid en toegankelijkheid}
+\begin{enumerate}
+  \item Wat zijn de belangrijkste eigenschappen die een nieuw systeem gebruiksvriendelijk maken?
+  \item Hoe snel moet iemand zonder technische achtergrond met het systeem kunnen werken?
+  \item Zijn er voorkeuren qua interface of visuele weergave van de data?
+  \subsubsection{Interview met de coach}
+  Elke vorm van informatie kan bijdragen aan betere analyses en tactische beslissingen. Hoe meer data beschikbaar is, hoe beter het team kan inspelen op verschillende spelsituaties. Alle extra inzichten, of het nu gaat om aanvalsrichtingen, servicepatronen of spelverdelingen, kunnen helpen bij het optimaliseren van de strategie. Daarom is elke aanvulling op de bestaande scouting welkom, mits deze betrouwbaar en praktisch toepasbaar is.
+  \item Moet het systeem geïntegreerd kunnen worden met andere software die jullie al gebruiken?
+  \subsubsection{Interview met de coach}
+  Het is toch belangrijk dat iedereen met hetzelfde systeem werkt om consistentie en efficiëntie te waarborgen. Toch is er ruimte voor aanvullende tools of losse systemen, zolang ze een meerwaarde bieden. Idealiter zouden nieuwe methodes geïntegreerd kunnen worden in DataVolley, zodat alle informatie centraal blijft. Samenwerking tussen verschillende scoutingtools en systemen zou alleen maar voordelen opleveren, mits de integratie soepel verloopt en de bruikbaarheid gewaarborgd blijft.
+  \subsubsection{Interview met de manager}
+  Het delen van statistieken tussen clubs is verplicht voor een transparante en gezamenlijke benadering van scouting en wedstrijdanalyse. Daarom zou het logisch zijn dat het nieuwe systeem goed integreerbaar is met andere software, zodat gegevens naadloos gedeeld kunnen worden. Dit zorgt ervoor dat de informatie consistent blijft en dat alle betrokken clubs eenvoudig toegang hebben tot dezelfde data, wat de samenwerking en het gebruik van de scoutingtools aanzienlijk vergemakkelijkt.
+  \item Hoe belangrijk is mobiele toegankelijkheid (bijv. via tablets of smartphones)?
+  \subsubsection{Interview met de coach}
+  Aangezien DataVolley veel wordt gebruikt, blijft het een belangrijke standaard binnen de scouting. Echter, de beperkte bruikbaarheid op tablets maakt het minder toegankelijk in sommige situaties. Een gebruiksvriendelijker en compacter systeem zou een grote verbetering zijn, vooral als het beter aansluit bij de moderne technologieën. De vooruitgang in scoutingsoftware laat zien dat er steeds efficiëntere en kleinere oplossingen mogelijk zijn, wat de praktische toepasbaarheid ten goede komt.
+\end{enumerate}
+
