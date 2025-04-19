@@ -1,2 +1,140 @@
 \chapter{\IfLanguageName{dutch}{Vergelijkende studie van AI-systemen}{Comparative study of AI systems}}%
 \label{ch:vergelijkendestudie}
+In dit hoofdstuk worden vier AI-gebaseerde systemen voor het verzamelen en analyseren van volleybalstatistieken onderling vergeleken. Het doel is om na te gaan welk systeem het best aansluit bij de noden en verwachtingen van volleybalclub Lindemans Aalst. De vergelijking gebeurt aan de hand van vooraf bepaalde criteria zoals nauwkeurigheid, snelheid, gebruiksvriendelijkheid, automatiseringsgraad, outputformaten, compatibiliteit, kosten en technische vereisten. Deze criteria zijn gebaseerd op inzichten uit de requirementsanalyse met de technische staf van de club.
+
+Het is belangrijk op te merken dat sommige van deze systemen zich momenteel nog in de ontwikkelingsfase bevinden en pas op een later moment commercieel beschikbaar zullen zijn. Dit wordt meegenomen in de eindbeoordeling en de afweging tussen de verschillende opties. Op basis van deze analyse wordt een aanbeveling geformuleerd over welk systeem het meest geschikt is voor implementatie binnen de clubcontext.
+
+\section{Nauwkeurigheid}
+\begin{itemize}
+  \item Hoe accuraat worden statistieken zoals side-out/transitie, fouten, setterverdeling, etc. herkend en geregistreerd?
+  \item Is de nauwkeurigheid vergelijkbaar of beter dan manuele invoer?
+\end{itemize}
+\subsubsection{Balltime AI}
+Balltime AI maakt gebruik van een geavanceerde AI-engine genaamd VOLL-E, die in staat is om automatisch volleybalwedstrijden te analyseren via video. De AI herkent acties zoals opslag, receptie, set, aanval, blok en verdediging en kan ook individuele spelers en teams identificeren op basis van hun positie en rugnummer. Daarnaast volgt het systeem de bal nauwkeurig en analyseert het het traject, de snelheid en de uitkomst van elke actie. Een slimme toevoeging is dat de AI automatisch de tijd tussen rally's verwijdert, wat gemiddeld 65–67\% van een volledige match beslaat. Hierdoor wordt de analyse niet alleen nauwkeuriger, maar ook veel efficiënter.
+\subsubsection{SmashVision}
+Alle statistieken zoals side-out, transitie, fouten, en de verdeling van de setter worden volledig geregistreerd. Hoewel het systeem qua nauwkeurigheid nauwelijks beter kan zijn dan manuele invoer, biedt het wel een waardevolle aanvulling. Het levert namelijk nieuwe en objectieve inzichten op over de tegenpartij die je met manuele registratie moeilijker of minder consequent kunt verzamelen.
+\subsubsection{VolleyStation AI}
+VolleyStation AI maakt gebruik van geavanceerde computer vision-technologie om automatisch alle 12 spelers op het veld te herkennen en te volgen aan beide kanten. Het systeem identificeert individuele spelersprestaties en bijdragen gedurende de hele wedstrijd. Daarnaast herkent het automatisch verschillende vaardigheden en acties, van aanval tot verdediging en biedt het gedetailleerde statistieken die verder gaan dan traditionele methoden.
+\subsubsection{SportsVisio}
+SportsVisio maakt gebruik van geavanceerde computer vision-technologie om automatisch spelers te herkennen op basis van jersey-kleuren en -nummers. Het systeem levert gedetailleerde statistieken, waaronder aanvalsefficiëntie en verdedigingsacties, met een hoge mate van nauwkeurigheid. Hoewel specifieke nauwkeurigheidspercentages niet worden vermeld, benadrukt het platform het belang van betrouwbare statistieken voor coachingstrategieën en rekrutering.
+
+\section{Snelheid en real-time verwerking}
+\begin{itemize}
+  \item Worden data real-time verwerkt tijdens de wedstrijd of pas achteraf?
+  \item Hoe snel worden analyses en inzichten beschikbaar gemaakt voor coaches?
+\end{itemize}
+\subsubsection{Balltime AI}
+Een van de grootste troeven van Balltime AI is de snelheid waarmee analyses worden geleverd. Zodra een video is geüpload, worden rally’s automatisch gesegmenteerd en geclassificeerd en worden de gegevens onmiddellijk verwerkt. Coaches kunnen gebruikmaken van automatisch gegenereerde highlightvideo’s, samengesteld op basis van vooraf ingestelde filters (zoals specifieke spelers of acties). Deze highlights zijn binnen enkele seconden beschikbaar, wat het systeem erg krachtig maakt voor snelle feedback.
+\subsubsection{SmashVision}
+De data worden real-time verwerkt tijdens de wedstrijd, wat het mogelijk maakt om live te scouten. Coaches krijgen dus meteen toegang tot relevante analyses en inzichten. Op termijn zal de AI zelfs de rol van assistent-coach kunnen opnemen, door mee te denken tijdens de wedstrijd. Voor matchvoorbereidingen, bijvoorbeeld het analyseren van tegenstanders, is de verwerkingstijd afhankelijk van de lengte van de geüploade video.
+\subsubsection{VolleyStation AI}
+Hoewel specifieke verwerkingstijden niet worden vermeld, benadrukt VolleyStation AI het vermogen om analyses te automatiseren zonder de noodzaak van handmatige codering. Het systeem biedt pro-niveau inzichten zonder de complexiteit, waardoor coaches en spelers snel toegang hebben tot de benodigde informatie. 
+\subsubsection{SportsVisio}
+Na het uploaden van een wedstrijdvideo duurt het doorgaans minder dan 24 uur voordat de statistieken en highlights beschikbaar zijn. De verwerkingstijd kan variëren afhankelijk van de lengte en kwaliteit van de video, maar het streven is om binnen 48 uur resultaten te leveren.
+
+\section{Gebruiksvriendelijkheid}
+\begin{itemize}
+  \item Is het systeem gemakkelijk in gebruik voor mensen zonder technische achtergrond?
+  \item Hoe intuïtief is de interface? Zijn er apps of mobiele versies beschikbaar?
+\end{itemize}
+\subsubsection{Balltime AI}
+Balltime is ontworpen om zowel gebruiksvriendelijk als breed toegankelijk te zijn. Het platform werkt via een webapplicatie die optimaal presteert in Google Chrome, maar er is ook een app beschikbaar voor iOS om eenvoudig video's op te nemen en te uploaden. Android-gebruikers kunnen een snelkoppeling installeren om een app-achtige ervaring te krijgen. De interface is intuïtief, met duidelijke dashboards, overzichtelijke menu’s en snelle toegang tot analyses, video’s en statistieken. Daardoor is het systeem ook bruikbaar voor gebruikers zonder uitgebreide technische kennis.
+\subsubsection{SmashVision}
+Het systeem is ontworpen met gebruiksvriendelijkheid als uitgangspunt. Ook mensen zonder technische achtergrond moeten er vlot mee kunnen werken. De interface is simpel en intuïtief opgebouwd, zodat iedereen snel zijn weg vindt. Er is geen aparte app, maar wel een webplatform dat perfect werkt op tablet, gsm en pc.
+\subsubsection{VolleyStation AI}
+VolleyStation AI is ontworpen met een gebruiksvriendelijke interface die intuïtieve navigatie biedt. Gebruikers kunnen eenvoudig wedstrijden uploaden, statistieken bekijken en videoclips analyseren. Het platform is toegankelijk via verschillende apparaten, waaronder smartphones, waardoor het gemakkelijk is om opnames te maken en te analyseren. 
+\subsubsection{SportsVisio}
+Het platform is ontworpen met een gebruiksvriendelijke interface, geschikt voor coaches, spelers en ouders. Gebruikers kunnen eenvoudig wedstrijden uploaden en binnen de app statistieken en videoclips bekijken. De app biedt intuïtieve navigatie en snelle toegang tot analyses en highlights.
+
+\section{Automatiseringsgraad}
+\begin{itemize}
+  \item Welke processen worden volledig automatisch uitgevoerd (bv. herkennning van aanvalsrichtingen, setterkeuzes)?
+  \item Kan het systeem afwijkingen van de voorbereiding automatisch signaleren?
+\end{itemize}
+\subsubsection{Balltime AI}
+Balltime scoort bijzonder hoog op het vlak van automatisering. Bij het uploaden van een wedstrijdvideo worden niet alleen de acties automatisch herkend, maar ook baltrajecten, spelersbewegingen en tactische patronen. Coaches hoeven niets manueel te coderen: de AI doet alles, van statistiekengeneratie tot highlightcreatie en zelfs het aanduiden van dominante acties per speler. Ook visuele overlays en verschillen met de voorbereiding kunnen automatisch in beeld worden gebracht, wat het systeem zeer krachtig maakt voor zowel tactische analyses als talentontwikkeling.
+\subsubsection{SmashVision}
+Alle processen zullen volledig geautomatiseerd verlopen, van het herkennen van aanvalsrichtingen en setterkeuzes tot een algemene scouterfunctie. In de eerste fase focust de AI op het accuraat verzamelen en weergeven van data. In een volgende fase zal de AI ook actief afwijkingen van de voorbereiding kunnen signaleren, en zo de rol van assistent-coach opnemen door te helpen bij het interpreteren van de data.
+\subsubsection{VolleyStation AI}
+Het platform automatiseert het volledige proces van videobeoordeling: van het herkennen van acties en spelers tot het genereren van statistieken en highlights. Gebruikers hoeven geen handmatige codering uit te voeren. De AI verwerkt de gegevens en levert kant-en-klare analyses en videoclips. 
+\subsubsection{SportsVisio}
+SportsVisio neemt het volledige videobeoordelingsproces uit handen door automatisch spelers en acties te identificeren, statistieken te genereren en highlights samen te stellen. Dankzij de AI-technologie is handmatige codering overbodig, gebruikers ontvangen direct gebruiksklare analyses en videofragmenten.
+
+\section{Outputformaten}
+\begin{itemize}
+  \item Welke soorten visualisaties biedt het systeem (dashboards, rapporten, live feedback)?
+  \item Ondersteunt het verschillende outputformaten: tabellen, grafieken, kleurcoderingen?  
+\end{itemize}
+\subsubsection{Balltime AI}
+De outputmogelijkheden van Balltime zijn uitgebreid en visueel aantrekkelijk. Gebruikers krijgen toegang tot real-time dashboards, box scores, rotatiestatistieken, aanvalstendensen, heatmaps en visuele overlays. Belangrijke data zoals aanvalshoek, opslag- of aanvalsnelheid en balbanen worden visueel weergegeven met duidelijke grafieken of animaties. Daarnaast kunnen coaches en spelers zelf AI-gegenereerde highlightvideo’s maken via een geïntegreerde tool. Deze zijn ideaal voor coaching, teamanalyse of zelfs voor rekrutering via sociale media.
+\subsubsection{SmashVision}
+Het systeem biedt een breed scala aan visualisaties die coaches en analisten meteen inzicht geven in het spelverloop. Alle bestaande rapporttypes worden ondersteund, zoals heatmaps, rotatie-analyses, speler-analyses en zowel 2D- als 3D-weergaves. In de eerste fase ligt de focus op duidelijkheid zonder kleurcodering, maar op basis van gebruikersfeedback kan dit later eenvoudig toegevoegd worden. De output kan weergegeven worden in verschillende formaten zoals tabellen en grafieken, aangepast aan de noden van het team.
+\subsubsection{VolleyStation AI}
+VolleyStation AI biedt gedetailleerde statistieken, individuele spelersanalyses en automatisch gegenereerde highlightvideo's. Gebruikers kunnen clips filteren, favorieten markeren en aangepaste highlightreels samenstellen. Daarnaast kunnen spelers hun prestaties delen via sociale media of met recruiters. 
+\subsubsection{SportsVisio}
+Het platform biedt gedetailleerde boxscores, individuele spelersstatistieken en automatisch gegenereerde highlightvideo's. Gebruikers kunnen clips filteren, favorieten markeren en aangepaste highlightreels samenstellen. Daarnaast kunnen spelers hun prestaties delen via sociale media of met recruiters.
+
+\section{Compatibiliteit en integratie}
+\begin{itemize}
+  \item Kan het systeem samenwerken met bestaande tools zoals DataVolley of VolleyMetrics?
+  \item Werkt het op verschillende platformen (Windows, Mac, iOS, Android)?
+\end{itemize}
+\subsubsection{Balltime AI}
+Balltime AI is ontworpen om compatibel te zijn met een breed scala aan opnameapparatuur, waaronder smartphones, GoPro’s en camcorders. De enige vereisten zijn: filmen in 1080p bij 30 fps, horizontaal opnemen en bij voorkeur vanop een statief, achteraan het speelveld. Sinds kort is Balltime overgenomen door Hudl waardoor de mogelijkheid tot integratie met VolleyMetrics in de toekomst mogelijk zal zijn, maar voorlopig kunnen de video's en data kunnen eenvoudig gedeeld worden via link, sociale media, YouTube of SportsRecruits, wat zorgt voor een flexibele workflow en goede deelbaarheid.
+\subsubsection{SmashVision}
+Het systeem is compatibel met bestaande tools zoals DataVolley, een samenwerking die in Liga A zelfs verplicht is. Het scoutingsformulier kan dus zonder probleem in DataVolley geïntegreerd worden. Daarnaast is het platform toegankelijk via een gebruiksvriendelijke website die werkt op alle grote systemen: Windows, Mac, iOS en Android.
+\subsubsection{VolleyStation AI}
+Het platform ondersteunt videobeelden van verschillende soorten opnameapparatuur, zolang de video's een resolutie van 1080p bij 30 frames per seconde hebben. Voor een correcte werking is het noodzakelijk dat alle teamleden uniforme shirts dragen met goed zichtbare en unieke rug- en borstnummers.
+\subsubsection{SportsVisio}
+SportsVisio is compatibel met videobeelden afkomstig van verschillende opnameapparaten, zoals smartphones, vaste camera's aan de muur of andere videotoestellen. Belangrijk is dat de opnames voldoen aan de minimale vereisten van een resolutie van 1080p bij 30 frames per seconde. Dit is nodig om nauwkeurige analyses, statistieken en highlights te kunnen genereren via het AI-systeem van SportsVisio.
+
+Daarnaast is het essentieel dat alle spelers op het veld uniforme jerseys dragen. Deze jerseys moeten voorzien zijn van duidelijk zichtbare en unieke rug- én borstnummers. Als de nummers onduidelijk zijn of ontbreken, of als teamleden verschillende kleding dragen, kan het systeem moeite hebben met het correct herkennen en volgen van spelers.
+
+\section{Kosten en ROI}
+\begin{itemize}
+  \item Wat zijn de aanschaf-, licentie- en onderhoudskosten?
+  \item Hoe verhouden deze kosten zich tot de verwachte voordelen voor de club?
+\end{itemize}
+\subsubsection{Balltime AI}
+
+\subsubsection{SmashVision}
+De kosten voor het systeem worden berekend op basis van een prijs per match die geanalyseerd wordt. Er is geen jaarlijks abonnement, waardoor de uitgaven flexibel zijn en afhangen van het aantal wedstrijden dat geanalyseerd wordt. Dit zorgt voor een kostenstructuur die beter aansluit bij de behoeften van de club, met een duidelijk rendement op investeringen.
+\subsubsection{VolleyStation AI}
+
+\subsubsection{SportsVisio}
+Voor een seizoensabonnement van SportsVisio betaalt de club 725 dollar. Hierin zitten 20 wedstrijden die geanalyseerd kunnen worden. Dit abonnement biedt toegang tot alle functies en updates van het platform. De kosten zijn relatief laag in vergelijking met de voordelen die het systeem biedt, zoals verbeterde analyses en inzichten voor coaches en spelers.
+
+\section{Technische vereisten}
+\begin{itemize}
+  \item Welke hardware is nodig (bv. aantal camera’s, sensoren, internetverbinding)?
+  \item Is er technische ondersteuning voorzien?
+\end{itemize}
+\subsubsection{Balltime AI}
+Technisch gezien zijn de vereisten voor Balltime beperkt, maar wel belangrijk. Een stabiele wifi-verbinding en voldoende opslagruimte op het toestel zijn essentieel. Er wordt aangeraden om altijd een statief te gebruiken en visuele obstakels (zoals felle verlichting of andere velden op de achtergrond) te vermijden. De eenvoudige technische setup maakt het systeem makkelijk inzetbaar op toernooien, trainingen of in competitieomgevingen.
+\subsubsection{SmashVision}
+Voor de werking van het systeem is slechts één camera nodig, samen met een stabiele internetverbinding om de statistieken in real-time naar de bank door te sturen. Technische ondersteuning is gegarandeerd, aangezien het om een Belgisch bedrijf gaat. Bij belangrijke klanten kan er zelfs ondersteuning ter plaatse voorzien worden, inclusief een duidelijke uitleg bij opstart of gebruik.
+\subsubsection{VolleyStation AI}
+Voor optimale prestaties moeten video's worden opgenomen in HD 1080p resolutie bij 30 fps. Het is belangrijk om het volledige speelveld in beeld te brengen en ervoor te zorgen dat alle spelers duidelijk zichtbaar zijn. Het platform accepteert video's van verschillende apparaten, zolang aan deze vereisten wordt voldaan. 
+\subsubsection{SportsVisio}
+Om de beste resultaten te behalen, dienen video's opgenomen te worden in HD 1080p met 30 frames per seconde. Het volledige speelveld moet in beeld zijn en alle spelers moeten goed zichtbaar zijn. Zolang aan deze voorwaarden wordt voldaan, ondersteunt het platform opnames van uiteenlopende apparaten.
+
+Er zijn verschillende manieren om een wedstrijd op te nemen. Dit kan met één smartphone die handmatig de actie volgt, met twee smartphones die elk een helft van het veld filmen, of met een vaste camera die aan een muur is gemonteerd. Hoewel alle genoemde opties ondersteund worden, wordt een vaste camera over het algemeen aangeraden voor de beste en meest consistente beeldkwaliteit.
+
+\section{Tranings- en ondersteuningsmogelijkheden}
+\begin{itemize}
+  \item Worden er opleidingen voorzien?
+  \item Hoeveel tijd en inzet is nodig om het systeem goed onder de knie te krijgen?
+\end{itemize}
+\subsubsection{Balltime AI}
+Balltime biedt uitgebreide ondersteuning via de Balltime Academy, een educatief platform met stapsgewijze handleidingen, video-tutorials, FAQ’s en praktische tips. Voor specifieke vragen of technische ondersteuning is er een helpdesk beschikbaar. De onboarding is goed uitgewerkt, waardoor ook nieuwe gebruikers snel wegwijs raken in het systeem.
+\subsubsection{SmashVision}
+Er worden verschillende opleidingen voorzien om het systeem snel onder de knie te krijgen. Denk aan YouTube-tutorials en een stapsgewijze uitleg op de website zelf. Dankzij de intuïtieve opbouw van het platform is er nauwelijks tijd of inzet nodig om ermee te leren werken. Gebruiksvriendelijkheid staat centraal, zodat iedereen er meteen mee aan de slag kan.
+\subsubsection{VolleyStation AI}
+VolleyStation AI voorziet niet in specifieke trainingsmodules, maar gebruikers kunnen wel terecht bij een uitgebreide FAQ en contactmogelijkheden op de website. Voor verdere hulp is het ondersteuningsteam eenvoudig bereikbaar bij vragen of technische problemen.
+\subsubsection{SportsVisio}
+Hoewel er geen specifieke trainingsmodules worden vermeld, biedt SportsVisio ondersteuning via een FAQ-sectie en contactmogelijkheden op hun website. Gebruikers kunnen bij vragen of problemen direct contact opnemen met het ondersteuningsteam.
+
+\section{Conclusie}
+Op basis van de geanalyseerde criteria lijkt SmashVision het meest veelbelovende AI-systeem voor volleybalclub Lindemans Aalst, maar deze is nog niet op de markt. Daardoor wordt voor Balltime AI gekozen. Het systeem blinkt uit in nauwkeurigheid door de geavanceerde VOLL-E engine en de automatische verwijdering van de tijd tussen rallies. De snelheid van dataverwerking en het direct beschikbaar stellen van highlightvideo's zijn aanzienlijke voordelen voor snelle feedback. De gebruiksvriendelijkheid wordt gewaarborgd door de intuïtieve webapplicatie en de beschikbare iOS-app (met een app-achtige ervaring voor Android).
+
+Een significant pluspunt is de hoge automatiseringsgraad van Balltime AI. Het systeem herkent niet alleen acties, maar ook baltrajecten en tactische patronen zonder manuele codering. De uitgebreide outputformaten, waaronder real-time dashboards, heatmaps en de mogelijkheid tot het genereren van AI-gestuurde highlightvideo's, bieden waardevolle inzichten. De compatibiliteit met diverse opnameapparatuur en de mogelijkheid tot delen via verschillende platformen verhogen de flexibiliteit. De technische vereisten lijken relatief eenvoudig te implementeren. Tot slot biedt Balltime AI uitgebreide trainings- en ondersteuningsmogelijkheden via de Balltime Academy.
