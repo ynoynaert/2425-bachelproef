@@ -1,100 +1,181 @@
 \subsubsection{Set 3 - Greenyard Maaseik}
 \label{sec:PL1_Greenyard3}
-% TODO: vergelijking
-% TODO: andere stats ook bijzetten
-\begin{figure}
-  \centering
-  \includegraphics[width=\textwidth]{PL1_AM/SET3/PL1_AM_3.png}
-  \caption{\label{fig:PL1_AM_3}Resultaten van de manuele invoer van Greenyard Maaseik in set 3.}
-\end{figure}
+
+Voor de opslagen worden tabellen \ref{tab:PL1ServeMaaseikMan3} en \ref{tab:PL1ServeMaaseikAI3} bekeken. De beoordeling van de opslag is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
+Het aantal opslagen is bij beide hetzelfde getal. Ook de gemiste en perfecte opslagen zijn gelijk. De AI-invoer is echter veel minder kritisch dan de manuele invoer.
+
+\begin{table}[ht!]
+    \centering
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Speler}& *E\% & Tot & = & / & - & ! & + & \#\\ \hline
+        Samuel Fafchamps  & -33\% & 3 & 1 &  &  & 2 &  &  \\ 
+        Jolan Cox  & -33\% & 3 & 2 &  & 1 &  &  &  \\ 
+        Dawid Pawlun & 0\% & 2 &  &  & 2 &  &  &  \\
+        Tijmen Bus & -100\% & 1 & 1 &  &  &  &  &  \\ 
+        Miquel Angel Fornés & 100\% & 3 &  &  &  &  & 2 & 1 \\ 
+        Hampus Ekstrand & 50\% & 2 &  &  & 1 &  &  & 1 \\ 
+        Pierre Perin & 25\% & 4 & 1 &  & 1 &  &  & 2 \\ \hline
+    \end{tabular}
+    \caption[Manueel ingevoerde opslagstatistieken voor Greenyard Maaseik in set 3]{\label{tab:PL1ServeMaaseikMan3}Manueel ingevoerd opslag statistieken voor Greenyard Maaseik in set 3.}
+\end{table}
 
 \begin{table}[ht!]
   \centering
   \scriptsize
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Name} & SA & SE & TA & Pct & Eff & Rtg & 0 & 1 & 2 & 3 & ? \\ \hline
-    Samuel Fafchamps & 0 & 1 & 3 & 0.67 & -0.33 & 2.33 &   &   & 2 & 1 & 0 \\
-    Renet Vancker &   &   &   &   &   &   &   &   &   &   &   \\
-    Andris Sirjakovs &   &   &   &   &   &   &   &   & 1 &   &   \\
-    Jolan Cox & 0 & 2 & 3 & 0.33 & -0.67 & 2.33 &   & 1 &   & 2 & 0 \\
-    Landon Douglas Currie &   &   &   &   &   &   &   &   & 2 & 2 & 1 \\
-    Dawid Pawlun & 0 & 0 & 2 & 1 & 0 & 1.5 &   & 1 & 1 &   &   \\
-    Tijmen Bus & 0 & 1 & 1 & 0 & -1 & 3 &   & 1 &   &   &   \\
-    Miquel Angel Fornés & 1 & 0 & 3 & 1 & 0.33 & 1.33 & 1 & 1 &   & 1 & 0 \\
-    Hampus Ekstrand & 1 & 0 & 2 & 1 & 0.5 & 1 & 1 &   & 1 &   &   \\
-    Piere Perin & 2 & 1 & 4 & 0.75 & 0.25 & 1.5 & 2 &   &   & 2 & 1 \\
-    Greenyard Maaseik & 1 & 2 & 25 & 0.92 & -0.04 & 1.67 & 1 & 11 & 7 & 5 & 0 \\
-    Lindemans Aalst & 4 & 5 & 18 & 0.72 & -0.06 & 1.78 & 4 & 3 & 4 & 7 & 0 \\ \hline
+    \textbf{Speler} & SA & SE & TA & Pct & Eff & Rtg & 0 & 1 & 2 & 3  \\ \hline
+    Samuel Fafchamps &  & 1 & 3 & 67 & -0.33 & 2.33 &   &   & 2 & 1 \\
+    Jolan Cox &  & 2 & 3 & 33 & -0.67 & 2.33 &   & 1 &   & 2 \\
+    Dawid Pawlun &  &  & 2 & 100 & 0.00 & 1.50 &   & 1 & 1 &  \\
+    Tijmen Bus &  & 1 & 1 & 0 & -1.00 & 3.00 &   & &   &  1 \\
+    Miquel Angel Fornés & 1 &  & 3 & 100 & 0.33 & 1.33 & 1 & 1 &   & 1 \\
+    Hampus Ekstrand & 1 &  & 2 & 100 & 0.50 & 1.00 & 1 &   & 1 &  \\
+    Piere Perin & 2 & 1 & 4 & 75 & 0.25 & 1.5 & 2 &   &   & 2 \\ \hline
   \end{tabular}
-  \caption[Serve statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1ServeGreenyard3}Serve statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
+  \caption[Opslagstatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1ServeMaaseikAI3}Opslag statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
+\end{table}
+
+De recepties worden in tabellen \ref{tab:PL1ReceiveMaaseikMan3} en \ref{tab:PL1ReceiveMaaseikAI3} weergegeven. De manuele invoer heeft de recepties beoordeeld met de tekens \# overeen met 3, + en / met 2, ! met 1, - en = met 0. Op het eerste zicht valt op dat er een andere hoeveelheden recepties zijn geregisteerd bij sommige spelers. Opnieuw valt ook weer op dat de manuele invoer kritischer is dan de AI-invoer. Één opslag is ook niet gequoteerd geweest door de AI.
+
+\begin{table}[ht!]
+  \centering
+  \scriptsize
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{Speler}& *E\% & Tot & = & / & - & ! & + & \#\\ \hline
+    Andris Sirjakovs & 0\% & 2 &  &  &  & 2 &  &  \\ 
+    Jolan Cox & -100\% & 1 &  & 1 &  &  &  &  \\
+    Landon Douglas Currie & 60\% & 5 &  &  &  & 2 & 2 & 1 \\
+    Tijmen Bus & -100\% & 1 &  & 1 &  &  &  &  \\ 
+    Miquel Angel Fornés & 0\% & 1 &  &  & 1 &  &  &  \\ 
+    Hampus Ekstrand & 17\% & 6 & 1 &  & 2 & 3 &  &  \\ 
+    Pierre Perin & 29\% & 7 &  &  & 4 & 1 & 1 & 1 \\ \hline
+  \end{tabular}
+  \caption[Manueel ingevoerde receptiestatistieken voor Greenyard Maaseik in set 3]{\label{tab:PL1ReceiveMaaseikMan3}Manueel ingevoerd receptie statistieken voor Greenyard Maaseik in set 3.}
 \end{table}
 
 \begin{table}[ht!]
   \centering
   \scriptsize
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Name} & 3 & 2 & 1 & 0 & TA & ? & Pass\% & Perfect PP\% & Good GP\% \\ \hline
-    Samuel Fafchamps &   &   &   &   &   &   &   &   &   \\
-    Renet Vancker &   &   & 1 & 0 & 3 & 0 & 0 & 1 & 0 \\
-    Andris Sirjakovs & 1 & 0 & 2 & 0 & 3 & 1 & 0 & -0.67 & -1 \\
-    Jolan Cox &   &   &   &   &   &   &   &   &   \\
-    Landon Douglas Currie & 5 & 0 & 2 & 0 & 3 & 1 & 0.4 & 0.8 & 0 \\
-    Dawid Pawlun & 6 & 1 &   & 0 & 17 & 3 & 1.8 & 0.35 & 0.5 \\
-    Tijmen Bus & 1 & 2 & 1 & 0 & 0 & 1 & 0 & -0.5 & -0.5 \\
-    Miquel Angel Fornés &   & 1 & 1 & 0 & 1 & 0 & 0 & 0.5 & 0 \\
-    Hampus Ekstrand & 2 & 3 & 1 & 6 & 0 & 1 & 1.17 & 0 & 0.33 \\
-    Piere Perin & 2 & 4 &   & 7 & 7 & 0 & 1.57 & 0.14 & 0.43 \\
-    Greenyard Maaseik & 2 & 4 & 4 &   & 10 & 0 & 1.8 & 0.2 & 0.6 \\
-    Lindemans Aalst & 3 & 7 & 10 & 1 & 22 & 1 & 1.57 & 0.14 & 0.48 \\ \hline
+    \textbf{Speler} & 3 & 2 & 1 & 0 & TA & ? & Pass\% & Perfect PP\% & Good GP\% \\ \hline
+    Andris Sirjakovs &  & 2 &  &  & 2 &  & 2 & 0 & 100 \\
+    Landon Douglas Currie & 2 & 2 & 1 &  & 5 &  & 2.20 & 40 & 80 \\
+    Tijmen Bus &  &  & 1 &  & 2 & 1 & 1.00 & 0 & 0 \\
+    Miquel Angel Fornés &   &  & 1 &  & 1 &  & 1.00 & 0 & 0 \\
+    Hampus Ekstrand &  & 2 & 3 & 1 & 6 &  & 1.17 & 0 & 33 \\
+    Piere Perin & 1 & 1 & 4 &  & 6 &  & 1.50 & 17 & 33 \\ \hline
   \end{tabular}
-  \caption[Receive statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1ReceiveGreenyard3}Serve statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
+  \caption[Receptiestatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1ReceiveMaaseikAI3}Receptie statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
+\end{table}
+
+In tabellen \ref{tab:PL1SetMaaseikMan3} en \ref{tab:PL1SetDigMaaseikAI3} wordt de spelverdeling weergegeven. De hoeveelheden zijn hier zeer verschillend. Bij sommige spelers geeft de manuele invoer ze meer, bij andere dan weer meer door de AI. Volgens manuele invoer heeft Jolan Cox ook vijf keer aan spelverdeling gedaan, terwijl dit door AI geen enkele keer was. Dawid Pawlun heeft door de AI 17 keer aan spelverdeling gedaan, terwijl dit manueel maar 14 keer was. Dit is een verschil van 3. Dit is een groot verschil, maar het kan zijn dat de AI deze als spelverdeling heeft gezien, terwijl dit manueel niet zo was.
+
+Ook bij de verdeding, tabel \ref{tab:PL1DigMaaseikMan3} en \ref{tab:PL1SetDigMaaseikAI3}, zijn er duidelijke verschillen te zien. Hier zijn er ook meerdere spelers die verschillende hoeveelheden verdedigingsacties hebben gekregen. Dit kan iets te maken hebben dat de verdediging buiten het beeld van de camera is gebeurd, waardoor de AI dit niet heeft kunnen registreren.
+
+\begin{table}[ht!]
+    \centering
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Speler} & *E\% & Tot & = & / & - & ! & + & \# \\ \hline
+        Samuel Fafchamps  & 100\% & 1 &  &  &  &  & 1 &  \\ 
+        Renet Vancker & 100\% & 3 &  &  &  &  & 3 &  \\
+        Jolan Cox & 100\% & 5 &  &  &  &  & 5 &  \\ 
+        Landon Douglas Currie & 100\% & 1 &  &  &  &  & 1 &  \\ 
+        Dawid Pawlun & 100\% & 14 &  &  &  &  & 11 & 3 \\ 
+        Hampus Ekstrand & 100\% & 1 &  &  &  &  & 1 &  \\
+        Pierre Perin & 100\% & 4 &  &  &  &  & 4 &  \\ \hline
+    \end{tabular}
+    \caption[Manueel ingevoerde spelverdelingsstatistieken gemaakt voor Greenyard Maaseik in set 3]{\label{tab:PL1SetMaaseikMan3}Manueel ingevoerde spelverdeling statistieken gemaakt voor Greenyard Maaseik in set 3.}
+\end{table}
+
+\begin{table}[ht!]
+    \centering
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Speler} & *E\% & Tot & = & / & - & ! & + & \#\\ \hline
+        Renet Vancker & 0\% & 2 & 1 &  & 1 &  &  &  \\ 
+        Jolan Cox & 75\% & 4 &  & 1 & 1 &  & 2 &  \\ 
+        Landon Douglas Currie & 50\% & 2 &  &  & 1 &  & 1 &  \\ 
+        Dawid Pawlun & 33\% & 3 &  &  & 2 &  & 1 &  \\ 
+        Miquel Angel Fornés & 0\% & 2 & 1 &  & 1 &  &  &  \\ 
+        Pierre Perin & 67\% & 3 &  &  & 1 &  & 2 &  \\ \hline
+    \end{tabular}
+    \caption[Manueel ingevoerde verdedigingsstatistieken gemaakt voor Greenyard Maaseik in set 3]{\label{tab:PL1DigMaaseikMan3}Manueel ingevoerde verdediging statistieken gemaakt voor Greenyard Maaseik in set 3.}
 \end{table}
 
 \begin{table}[ht!]
   \centering
   \scriptsize
   \begin{tabular}{|l|c|c|c|c|c|c|c|} \hline
-    \textbf{Name} & Set Ast & Set TA & Set SE & A/S & PCT & Dig DS & Dig DE \\ \hline
-    Samuel Fafchamps & 0 & 1 & 0 & 0 & 0 & 0 & 1 \\
-    Renet Vancker & 0 & 3 & 0 & 0 & 1 & 1 & 0 \\
-    Andris Sirjakovs & 0 & 2 & 3 & -0.67 & -0.5 & 0 & 0 \\
-    Jolan Cox & 5 & 0 & 0 & 1 & 0 & 0 & 0 \\
-    Landon Douglas Currie & 0 & 0 & 0 & 0 & 0.5 & 0 & 3 \\
-    Dawid Pawlun & 6 & 17 & 0 & 4 & 0.35 & 4 & 0 \\
-    Tijmen Bus & 0 & 1 & 0 & 0 & -0.5 & 2 & 4 \\
-    Miquel Angel Fornés & 1 & 2 & 0 & 0.5 & 1 & 1 & 0 \\
-    Hampus Ekstrand & 3 & 8 & 1 & 0.38 & 0.12 & 3 & 1 \\
-    Piere Perin & 0 & 6 & 0 & 0 & 0 & 2 & 0 \\
-    Greenyard Maaseik & 9 & 24 & 0 & 0.38 & 0.2 & 15 & 0 \\
-    Lindemans Aalst & 7 & 31 & 0 & 0.23 & 0 & 16 & 1 \\ \hline
+    \textbf{Speler} & Ast & TA & SE & A/S & PCT & DS & DE \\ \hline
+    Samuel Fafchamps &  & 1 &  & 0.00 & 0 &  &  \\
+    Renet Vancker &  & 3 &  & 0.00 & 0 & 1 &  \\
+    Jolan Cox &  &  &  &  &  & 5 &  \\
+    Landon Douglas Currie &  & 2 &  & 0.00 & 0 & 3 & 1 \\
+    Dawid Pawlun & 6 & 17 &  & 6.00 & 35 & 4 &  \\
+    Tijmen Bus &  & 1 &  & 0.00 & 0 & 1 &  \\
+    Hampus Ekstrand & 1 & 2 &  & 1.00 & 50 &  &  \\
+    Piere Perin &  & 5 &  & 0.00 & 0 & 2 &  \\  \hline
   \end{tabular}
-  \caption[Setting en digging statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1SetDigGreenyard3}Serve statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
+  \caption[Spelverdelings- en verdedigingsstatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1SetDigMaaseikAI3}Spelverdeling en verdediging statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
+\end{table}
+
+Tabel \ref{tab:PL1AttMaaseikMan3}, \ref{tab:PL1BlockMaaseikMan3} en \ref{tab:PL1AttBlockMaaseikAI3} tonen de de aanval en blokstatistieken gemaakt door de AI en de manuele invoer voor Greenyard Maaseik in set 3. 
+
+De aanvallen worden correct geregisteerd door de AI, behalve bij één speler. Jolan Cox heeft een aanval te minder dan bij de manuele invoer. 
+
+De aanvallen en blokkeringen worden door de AI niet beoordeeld op kwaliteit. Ook worden de blokkeringen op een totaal andere manier bekeken door de AI. Dit systeem geeft geen duidelijke blokpunten. Dit is echter wel van belang.
+
+\begin{table}[ht!]
+    \centering
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Speler} & *E\% & Tot & = & / & - & ! & + & \#\\ \hline
+        Andris Sirjakovs & -67\% & 3 &  & 2 &  &  & 1 &  \\ 
+        Jolan Cox & 0\% & 5 &  & 1 & 3 &  &  & 1 \\ 
+        Dawid Pawlun & 0\% & 2 & 1 &  &  &  &  & 1 \\ 
+        Tijmen Bus & -25\% & 4 & 1 & 1 &  & 1 &  & 1 \\ 
+        Miquel Angel Fornés & 50\% & 2 &  &  &  &  & 1 & 1 \\ 
+        Hampus Ekstrand & 12\% & 8 & 1 & 1 & 1 & 1 & 1 & 3 \\ 
+        Pierre Perin  & 17\% & 6 & 1 &  & 2 & 1 &  & 2 \\ \hline
+    \end{tabular}
+   \caption[Manueel ingevoerde aanvalsstatistieken gemaakt Greenyard Maaseik in set 3]{\label{tab:PL1AttMaaseikMan3}Manueel ingevoerde aanval statistieken gemaakt voor Greenyard Maaseik in set 3.}
+\end{table}
+
+\begin{table}[ht!]
+    \centering
+    \scriptsize
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Speler} & *E\% & Tot & = & / & - & ! & + & \#\\ \hline
+        Samuel Fafchamps & 50\% & 2 &  &  &  & 1 &  & 1 \\ 
+        Jolan Cox & -100\% & 1 & 1 &  &  &  &  &  \\
+        Dawid Pawlun & -25\% & 4 & 1 & 1 &  &  & 1 & 1 \\
+        Miquel Angel Fornés & 0\% & 3 & 1 &  &  & 1 &  & 1 \\ 
+        Pierre Perin & 0\% & 1 &  &  &  & 1 &  &  \\ \hline
+    \end{tabular}
+    \caption[Manueel ingevoerde blokstatistieken gemaakt Greenyard Maaseik in set 3]{\label{tab:PL1BlockMaaseikMan3}Manueel ingevoerde blok statistieken gemaakt voor Greenyard Maaseik in set 3.}
 \end{table}
 
 \begin{table}[ht!]
   \centering
   \scriptsize
-  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Name} & Attack K & E & TA & Atk\% & Kill\% & K/S & Error\% & Block BS & BA \\ \hline
-    Samuel Fafchamps &   &   &   &   &   &   &   & 0 &   \\
-    Renet Vancker &   &   &   &   &   &   &   &   &   \\
-    Andris Sirjakovs & 0 & 2 & 3 & -0.67 & 0 & 0 & 0.67 &   &   \\
-    Jolan Cox & 1 & 0 & 6 & 0 & 0.17 & 0 & 0 & 0 &   \\
-    Landon Douglas Currie &   &   &   &   &   &   &   &   &   \\
-    Dawid Pawlun & 1 & 1 & 2 & 0 & 1 & 0.5 & 0.5 & 0 &   \\
-    Tijmen Bus & 4 & 2 & 4 & -0.5 & 0.5 & 0 & 0 & 0 &   \\
-    Miquel Angel Fornés & 1 & 0 & 2 & 0.5 & 0.5 & 1 & 0 & 1 & 0 \\
-    Hampus Ekstrand & 3 & 1 & 8 & 0.25 & 0.38 & 3 & 0.12 &   &   \\
-    Piere Perin & 1 & 6 & 6 & 0.17 & 0.33 & 2 & 0.17 & 0 &   \\
-    Greenyard Maaseik & 10 & 4 & 27 & 0.22 & 0.37 & 10 & 0.15 & 2 & 0 \\
-    Lindemans Aalst & 8 & 8 & 31 & 0 & 0.26 & 8 & 0.26 & 2 & 0 \\ \hline
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|} \hline
+    \textbf{Speler} &  K & E & TA & Atk\% & Kill\% & K/S & Error\% & BS & BA & BE & B/S \\ \hline
+    Samuel Fafchamps &   &   &   &   &   &   &   & 1 &  & & 1.00 \\
+    Andris Sirjakovs &  & 2 & 3 & -0.67 & 0 &  & 67 &   &  &  & \\
+    Jolan Cox & 1 & 1 & 6 & 0.00 & 17 & 1 & 17 &  &  &  & \\
+    Dawid Pawlun & 1 & 1 & 2 & 0.00 & 50 & 1 & 50 & 1 &  &  & 1.00 \\
+    Tijmen Bus &  & 2 & 4 & -0.50 & 0 &  & 50 & &  &  &  \\
+    Miquel Angel Fornés & 1 &  & 2 & 0.50 & 50 & 1 & 0 & 1 & & & 1.00 \\
+    Hampus Ekstrand & 3 & 1 & 8 & 0.25 & 38 & 3 & 12 &   &   &  & \\
+    Piere Perin & 2 & 1 & 6 & 0.17 & 33 & 2 & 17 &  &  & &  \\ \hline
   \end{tabular}
-  \caption[Attacking en blocking statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1AttBlockGreenyard3}Serve statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
+  \caption[Aanvals- en blokstatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1AttBlockMaaseikAI3}Aanval en blok statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
 \end{table}
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\textwidth]{PL1_AM/SET3/ROT_STATS.png}
-  \caption{\label{fig:PL1_ROT_STATS_3}Rotatie statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
-\end{figure}
