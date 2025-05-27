@@ -8,16 +8,131 @@ Het oorspronkelijke plan voorzag een praktijktestperiode van twee weken. Echter,
 
 Door de prestaties van het geautomatiseerde systeem te vergelijken met handmatig geregistreerde gegevens en door feedback van coaches en staf te verzamelen, wordt nagegaan of het AI-systeem daadwerkelijk een significante meerwaarde kan bieden voor de werking van de club. De inzichten uit deze praktijktest vormen een essentiële basis voor het formuleren van aanbevelingen omtrent een bredere implementatie op lange termijn.
 
+In bijlage \ref{ch:afkortingen} is een overzicht te vinden van de afkortingen die in dit hoofdstuk worden gebruikt. De andere statistieken en vergelijkingen zijn te vinden in bijlage \ref{ch:statistieken}.
+
 \section{Kwartfinale Play-offs - 16/4/2025}
 \subsection{Vergelijking van de statistieken}
-\input{PL1_Greenyard1}
 \input{PL1_Aalst2}
-\input{PL1_Greenyard3}
-\input{snelheden}
 
-\section{Kwartfinale Play-offs - 20/4/2025}
-\subsection{Vergelijking van de statistieken}
-\input{PL3_Greenyard1}
-\input{PL3_Aalst2}
-\input{PL3_Greenyard3}
-\input{PL3_Aalst4}
+\subsection{Vergelijking van de opslagsnelheden}
+In tabel\ref{tab:PL1ServeMan2} is de manueel gemeten opslagsnelheden weergegeven. In \ref{tab:PL1ServeAI2} is de opslagsnelheden weergegeven gemaakt door Balltime AI. De eerste kolom geeft de setstanden aan. De tweede kolom geeft de speler van Lindemans Aalst aan die serveert. De derde kolom geeft de speler van Greenyard Maaseik aan die serveert en de vierde kolom geeft de snelheid in km/u aan. Op figuur \ref{fig:PL1_Serve} is een voorbeeld van de opslagmeting van Balltime AI te zien. De snelheid is weergegeven in de rechterbovenhoek van het scherm.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{PL1_AM/opslag.png}
+  \caption{\label{fig:PL1_Serve}Voorbeeld van opslagmeting van Balltime AI.}
+\end{figure}
+
+Ook in de tweede set, zie tabel \ref{tab:PL1ServeAI2}, valt op dat Balltime AI niet alle snelheden heeft opgemeten. In deze set zijn er 23 metingen gedaan van de 46 opslagen, 50\% van de opslagen. Dit is een verbetering ten opzichte van de eerste set, maar er zijn nog steeds veel snelheden die niet zijn gemeten. De snelheden die wel zijn gemeten, zijn ook hier weer verschillend van de manueel gemeten snelheden. Bij stand 10-9 werd manueel 80 km/u gemeten, terwijl Balltime AI 114 km/u registreerde. Een kleinere afwijking was dan wel weer te vinden bij stand 16-13, waar Balltime AI een snelheid van 41 km/u aangaf tegenover 45 km/u bij de manuele meting. Balltime AI gaf op sommige momenten wel veel hogere waardes, zoals 122 km/u bij 13-11, waar manueel slechts 55 km/u werd gemeten. In deze set lijken er ook enkele consistentere snelheden te zijn gemeten, zoals bij 1-0, waar manueel de meting 93 km/u aangaf en Balltime AI 94 km/u aangaf.
+
+\begin{table}[ht!]
+  \centering
+  \scriptsize
+  \begin{tabular}{|c|c|c|c|} \hline
+    L.A.-G.M. & L.A. & G.M. & km/u \\ \hline
+    0-0 &  & 19 & 116 \\
+    1-0 & 7 & & 93 \\
+    1-1 &  & 14 & 50 \\
+    2-1 & 1 & & 51 \\
+    3-1 & 1 & & 53 \\
+    3-2 &  & 10 & 95 \\
+    4-2 & 13 & & 89 \\
+    4-3 &  & 15 & 71 \\
+    5-3 & 9 & & 97 \\
+    5-4 &  & 2 & 90 \\
+    6-4 & 11 & & 82 \\
+    6-5 &  & 4 & 61 \\
+    7-5 & 14 & & 53 \\
+    7-6 &  & 19 & 116 \\
+    8-6 & 7 &  & 101 \\
+    8-7 &  & 14 & 55 \\
+    8-8 &  & 14 & 58 \\
+    9-8 & 7 & & 60 \\
+    9-9 &  & 10 & 106 \\
+    10-9 & 13 & & 80 \\
+    11-9 & 13 & & 95 \\
+    12-9 & 13 & & 97 \\
+    12-10 &  & 15 & 109 \\
+    12-11 &  & 15 & 92 \\
+    13-11 & 9 &  & 55 \\
+    13-12 &  & 2 & 93 \\
+    14-12 & 11 &  & 98 \\
+    14-13 &  & 4 & 53 \\
+    15-13 & 14 &  & 51 \\
+    16-13 & 14 &  & 45 \\
+    16-14 &  & 19 & 114 \\
+    17-14 & 7 &  & 105 \\
+    18-14 & 7 &  & 100 \\
+    18-15 &  & 14 & 50 \\
+    18-16 &  & 14 & 58 \\
+    19-16 & 3 &  & 106 \\
+    20-16 & 3 &  & 98 \\
+    20-17 &  & 10 & 105 \\
+    21-17 & 13 &  & 97 \\
+    22-17 & 13 &  & 106 \\
+    23-17 & 13 &  & 100 \\
+    23-18 &  & 15 & 58 \\
+    23-19 &  & 15 & 79 \\
+    24-19 & 9 &  & 98 \\
+    24-20 &  & 2 & 108 \\
+    24-21 &  & 2 & 101 \\
+    25-21 &  &  &  \\ \hline
+  \end{tabular}
+  \caption[Manueel gemeten opslagsnelheden tijdens set 2]{\label{tab:PL1ServeMan2}Manueel gemeten opslagsnelheden tijdens set 2.}
+\end{table}
+
+\begin{table}[ht!]
+  \centering
+  \scriptsize
+  \begin{tabular}{|c|c|c|c|} \hline
+    L.A.-G.M. & L.A. & G.M. & km/u \\ \hline
+    0-0 &  & 19 & - \\
+    1-0 & 7 & & 94 \\
+    1-1 &  & 14 & 56 \\
+    2-1 & 1 & & 55 \\
+    3-1 & 1 & & 59 \\
+    3-2 &  & 10 & - \\
+    4-2 & 13 & & - \\
+    4-3 &  & 15 & - \\
+    5-3 & 9 & & - \\
+    5-4 &  & 2 & 95 \\
+    6-4 & 11 & & - \\
+    6-5 &  & 4 & - \\
+    7-5 & 14 & & 71 \\
+    7-6 &  & 19 & - \\
+    8-6 & 7 &  & 70 \\
+    8-7 &  & 14 & 54 \\
+    8-8 &  & 14 & 43 \\
+    9-8 & 7 & & 73 \\
+    9-9 &  & 10 & 92 \\
+    10-9 & 13 & & 114 \\
+    11-9 & 13 & & 109 \\
+    12-9 & 13 & & 98 \\
+    12-10 &  & 15 & - \\
+    12-11 &  & 15 & 74 \\
+    13-11 & 9 &  & 122 \\
+    13-12 &  & 2 & - \\
+    14-12 & 11 &  & - \\
+    14-13 &  & 4 & 52 \\
+    15-13 & 14 &  & 113 \\
+    16-13 & 14 &  & 41 \\
+    16-14 &  & 19 & - \\
+    17-14 & 7 &  & - \\
+    18-14 & 7 &  & 53 \\
+    18-15 &  & 14 & 49 \\
+    18-16 &  & 14 & - \\
+    19-16 & 3 &  & - \\
+    20-16 & 3 &  & - \\
+    20-17 &  & 10 & - \\
+    21-17 & 13 &  & 118 \\
+    22-17 & 13 &  & - \\
+    23-17 & 13 &  & - \\
+    23-18 &  & 15 & - \\
+    23-19 &  & 15 & - \\
+    24-19 & 9 &  & 33 \\
+    24-20 &  & 2 & - \\
+    24-21 &  & 2 & - \\
+    25-21 &  &  &  \\ \hline
+  \end{tabular}
+  \caption[Gemeten opslagsnelheden door Balltime AI tijdens set 2]{\label{tab:PL1ServeAI2}Gemeten opslagsnelheden door Balltime AI tijdens set 2.}
+\end{table}
