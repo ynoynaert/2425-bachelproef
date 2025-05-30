@@ -1,21 +1,20 @@
 \subsubsection{Set 1 - Greenyard Maaseik}
 \label{sec:PL1_Greenyard1}
-%TODO: tekst aanpassen
-De opslagen en recepties van de eerste set van Greenyard Maaseik worden weergeven in figuur  \ref{fig:PL1ServeMaaseik1}. De beoordeling van de opslag is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
+De opslagen en recepties van de eerste set van Greenyard Maaseik worden weergeven in figuur  \ref{fig:PL1ServeMaaseik1}. De beoordeling van de opslag is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3. In de grafiek zijn de manuele statistieken omgezet naar de beoordelingsmethode van de AI voor een gemakkelijkere vergelijking. 
 
-Hier valt op dat de goede opslagen door beide in deze set niet zijn genoteerd. De AI-invoer heeft de opslagen meer verdeeld onder score 1 en 2. Terwijl de manuele invoer enkel score 1 of 3 heeft gegeven. De scouter is dus kritischer in zijn beoordeling van de opslag.
+Hier valt op dat de goede opslagen door beide in deze set niet zijn genoteerd. De AI-invoer heeft de opslagen meer verdeeld onder de verschillende scores. Terwijl de manuele invoer enkel score 1 of 3 heeft gegeven. De scouter is dus kritischer in zijn beoordeling van de opslag.
 
-De manuele invoer heeft de recepties beoordeeld met de tekens \# overeen met 3, + en / met 2, ! met 1, - en = met 0.
+De manuele invoer heeft de recepties beoordeeld met de tekens \# overeen met 3, + en / met 2, ! met 1, - en = met 0.  Ook hierbij zijn de manuele beoordelingen omgezet naar die van de AI voor een gemakkelijkere vergelijking.
 
-Bij de receptie zijn er grote verschillen aanwezig tussen de manuele invoer en de AI-invoer. Er is één receptie van Landon Douglas Currie die door de AI-invoer niet kon beoordeeld worden, maar ook hier kan er geconstateerd worden dat de manuele invoer veel kritischer is in zijn beoordeling. 
+Bij de receptie zijn er verschillen aanwezig tussen de manuele invoer en de AI-invoer. Er is één receptie die door de AI-invoer niet kon beoordeeld worden, maar ook hier kan er geconstateerd worden dat de manuele invoer veel kritischer is in zijn beoordeling. Beide invoeren hebben wel hetzelfde aantal met score 1 en 0. De AI-invoer heeft minder recepties met score 2, maar meer met score 3. Dit kan erop wijzen dat de AI de recepties positiever beoordeelt dan de scouter. 
 
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}
   \begin{axis}[
     title={Receptie- en opslagstatistieken van Greenyard Maaseik in set 1},
-    xlabel={x (AI)},
-    ylabel={y (Manueel)},
+    xlabel={Aantal opslagen/recepties (AI)},
+    ylabel={Aantal opslagen/recepties (Manueel)},
     grid=major,
     legend style={at={(1.05,1)}, anchor=north west},
     width=12cm,
@@ -123,7 +122,7 @@ Bij de verdeding, tabel \ref{tab:PL1DigMaaseikMan1} en \ref{tab:PL1SetDigMaaseik
 
 Bij de aanval (tabel \ref{tab:PL1AttMaaseikMan1} en \ref{tab:PL1AttBlockMaaseik1}) is het totaal aantal aanvallen gelijk bij iedereen behalve twee spelers. Zij hebben 1 en 2 aanvallen minder.
 
-Bij de blokstatistieken (tabel \ref{tab:PL1BlockMaaseikMan1} en \ref{tab:PL1AttBlockMaaseik1}) wordt er op een volledig andere manier naar gekeken. De AI geeft statistieken waar de speler deel kan zijn van een éénmans- of een meermansblock. Dit is bij de manuele invoer niet het geval. Hierdoor geeft de AI dus eigenlijk ook geen blokpunten aan de spelers. Ookal is dit wel belangrijke informatie.
+Bij de blokstatistieken (tabel \ref{tab:PL1BlockMaaseikMan1} en \ref{tab:PL1AttBlockMaaseik1}) wordt er op een volledig andere manier naar gekeken. De AI geeft statistieken waar de speler deel kan zijn van een éénmans- of een meermansblock. Dit is bij de manuele invoer niet het geval. Hierdoor geeft de AI dus eigenlijk ook geen blokpunten aan de spelers. Ook al is dit wel belangrijke informatie.
 
 De aanvallen en blocks worden door de AI niet beoordeeld op kwaliteit.
 

@@ -1,18 +1,17 @@
 \subsubsection{Set 3 - Greenyard Maaseik}
 \label{sec:PL1_Greenyard3}
-%TODO: tekst aanpassen
-Voor de opslagen en receptie wordt figuur \ref{fig:PL1ServeMaaseik3} bekeken. De beoordeling van de opslag is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
-Het aantal opslagen is bij beide hetzelfde getal. Ook de gemiste en perfecte opslagen zijn gelijk. De AI-invoer is echter veel minder kritisch dan de manuele invoer.
+Voor de opslagen en receptie wordt figuur \ref{fig:PL1ServeMaaseik3} bekeken. 
+Het aantal opslagen is bij beide hetzelfde getal. Ook het aantal perfecte (0) opslagen zijn gelijk. De AI-invoer is echter veel minder kritisch dan de manuele invoer. De manuele invoer heeft meer opslagen met score 3, terwijl de AI-invoer meer opslagen heeft met score 1 en 2.
 
-De manuele invoer heeft de recepties beoordeeld met de tekens \# overeen met 3, + en / met 2, ! met 1, - en = met 0. Op het eerste zicht valt op dat er een andere hoeveelheden recepties zijn geregisteerd bij sommige spelers. Opnieuw valt ook weer op dat de manuele invoer kritischer is dan de AI-invoer. Één opslag is ook niet gequoteerd geweest door de AI.
+Heel opvallend hier is dat er 8 recepties met score 0 (slechte receptie) zijn bij de manuele invoer en maar 1 bij de AI-invoer. Score 1 werd aan 8 recepties gegeven door de manuele invoer en 10 door de AI. Vijf recepties kregen score 2 door de scouter en zeven recepties kregen diezelfde score door de AI.
 
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}
   \begin{axis}[
     title={Receptie- en opslagstatistieken van Greenyard Maaseik in set 3},
-    xlabel={x (AI)},
-    ylabel={y (Manueel)},
+    xlabel={Aantal opslagen/recepties (AI)},
+    ylabel={Aantal opslagen/recepties (Manueel)},
     grid=major,
     legend style={at={(1.05,1)}, anchor=north west},
     width=12cm,

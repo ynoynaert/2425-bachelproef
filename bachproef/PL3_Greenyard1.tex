@@ -1,19 +1,16 @@
 \subsubsection{Set 1 - Greenyard Maaseik}
 \label{sec:PL3_Greenyard1}
-%TODO: tekst aanpassen
-De opslag- en receptiestatistieken worden weergeven in figuur \ref{fig:PL3ServeMaaseik1}. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
-Jolan Cox heeft volgens de AI één opslag meer gegeven dan volgens de manuele invoer. De foutieve opslag van Hampus Ekstrand is wel door beide genoteerd. Opvallend bij deze vergelijking is dat de manuele invoer positiever is bij verschillende opslagen dan de AI.
+De opslag- en receptiestatistieken worden weergeven in figuur \ref{fig:PL3ServeMaaseik1}. Opvallend bij deze vergelijking is dat de manuele invoer positiever is bij verschillende opslagen dan de AI. Er zijn meer opslagen met score 1 bij de manuele invoer dan bij de AI-invoer. Beide hebben geen score 0 uitgedeeld. Score 3 werd door de scouter wel meer gegeven dan door de AI. Score 2 werd dan weer meer gegeven door de AI dan door de scouter.
 
-De beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de receptie komt het teken \# overeen met 3, + en / met 2, ! met 1, - en = met 0.
-Opmerkelijk is dat Thomas Neyens geen receptie heeft gekregen van de AI, terwijl hij er volgens de manuele invoer wel twee keer receptie heeft genomen. Ook Landon Douglas Currie heeft door AI één receptie minder gekregen dan bij de manuele invoer. Hampus Ekstrand daarentegen heeft dan weer een receptie meer gekregen door de AI. Bij hem is er ook eentje niet beoordeeld kunnen worden. Over het algemeen is de beoordeling tussen de 2 methodes ongeveer gelijk.
+Over het algemeen is de beoordeling tussen de 2 methodes ongeveer gelijk in verband met de recpeties. Juist score 0 werd 7 keer meer aan een opslag gegeven door de scouter dan door de AI. Ook kon de AI één receptie niet beoordelen.
 
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}
   \begin{axis}[
     title={Scatterplot AI vs Manueel},
-    xlabel={x (AI)},
-    ylabel={y (Manueel)},
+    xlabel={Aantal opslagen/recepties (AI)},
+    ylabel={Aantal opslagen/recepties (Manueel)},
     grid=major,
     legend style={at={(1.05,1)}, anchor=north west},
     width=12cm,
@@ -71,7 +68,7 @@ Opmerkelijk is dat Thomas Neyens geen receptie heeft gekregen van de AI, terwijl
 
 Bij de spelverdelingsstatistieken (door Balltime AI in tabel \ref{tab:PL3SetDigMaaseikAI1}) zijn er bepaalde spelers die een andere hoeveelheid hebben. Sommige hebben één minder, andere dan weer één meer dan bij de manuele invoer, tabel \ref{tab:PL3SetMaaseikMan1}.
 
-Bij de verdedigingsstatistieken (door Balltime AI in tabel \ref{tab:PL3SetDigMaaseikAI1}) zijn er twee speler die volgens de AI wel er verdedinngsactie hebben ondernomen, maar bij de manuele invoer niet. Landon Douglas Currie heeft volgens de AI dan weer één verdeding minder dan bij de manuele invoer, zie tabel \ref{tab:PL3DigMaaseikMan1}.
+Bij de verdedigingsstatistieken (door Balltime AI in tabel \ref{tab:PL3SetDigMaaseikAI1}) zijn er twee spelers die volgens de AI wel er verdedinngsactie hebben ondernomen, maar bij de manuele invoer niet. Landon Douglas Currie heeft volgens de AI dan weer één verdeding minder dan bij de manuele invoer, zie tabel \ref{tab:PL3DigMaaseikMan1}.
 
 \begin{table}[ht!]
     \centering
@@ -114,7 +111,7 @@ Bij de verdedigingsstatistieken (door Balltime AI in tabel \ref{tab:PL3SetDigMaa
   \caption[Spelverdelings- en verdedigingsstatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 1]{\label{tab:PL3SetDigMaaseikAI1}Spelverdelings- en verdedigingsstatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 1.}
 \end{table}
 
-Bij de aanvalsstatistieken (door Balltime AI in tabel \ref{tab:PL3AttBlockMaaseikAI1} en manuele invoer in tabel \ref{tab:PL3AttMaaseikMan1}) is er bij één speler een verschillend aantal aanvallen geregistreed. Pierre Perin heeft volgens de AI één keer minder aangevallen dan bij de manuele invoer. Bij de andere spelers is het aantal bij beide hetzelfde. Ook bij deze set zijn de blokstatistieken door de AI, tabel \ref{tab:PL3AttBlockMaaseikAI1}, niet representatief tegen over de manuele invoer, tabel \ref{tab:PL3BlockMaaseikMan1}.
+Bij de aanvalsstatistieken (door Balltime AI in tabel \ref{tab:PL3AttBlockMaaseikAI1} en manuele invoer in tabel \ref{tab:PL3AttMaaseikMan1}) is er bij één speler een verschillend aantal aanvallen geregistreerd. Pierre Perin heeft volgens de AI één keer minder aangevallen dan bij de manuele invoer. Bij de andere spelers is het aantal bij beide hetzelfde. Ook bij deze set zijn de blokstatistieken door de AI, tabel \ref{tab:PL3AttBlockMaaseikAI1}, niet representatief tegen over de manuele invoer, tabel \ref{tab:PL3BlockMaaseikMan1}.
 
 \begin{table}[ht!]
     \centering

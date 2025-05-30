@@ -1,23 +1,18 @@
 \subsubsection{Set 4 - Lindemans Aalst}
 \label{sec:PL3_Aalst4}
-%TODO: tekst aanpassen
-De opslag- en recetpiestatistieken zijn weergegeven in figuur \ref{fig:PL3ServeReceiveAalst4}. 
+De opslag- en receptiestatistieken zijn weergegeven in figuur \ref{fig:PL3ServeReceiveAalst4}. 
 
-Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
+De perfecte opslag (0) is hetzelfde. Bij de andere opslagen valt op dat de AI meer score 2 geeft en de manuele meer score 1 en 3.
 
-De foutieve opslagen, bij manuele invoer een = en bij AI-invoer een Serve Error (SE), zijn correct weergegeven.  Ook de perfecte opslag is hetzelfde. Bij de andere opslagen valt op dat de AI meer score 2 geeft en de manuele meer score 1.
-
-De beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de receptie komt het teken \# overeen met 3, + en / met 2, ! met 1, - en = met 0.
-
-De AI heeft bij geen enkele receptie een score van 0 gegeven. Bij de manuele invoer is dit wel het geval voor vijf recepties. Ook bij de andere scores wordt duidelijk dat de manuele invoer kritischer is dan de AI.
+De AI heeft bij geen enkele receptie een score van 0 gegeven. Bij de manuele invoer is dit wel het geval voor vijf recepties. Ook bij de andere scores wordt duidelijk dat de manuele invoer kritischer is dan de AI. 
 
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}
   \begin{axis}[
     title={Receptie- en opslagstatistieken van Lindemans Aalst in set 4},
-    xlabel={x (AI)},
-    ylabel={y (Manueel)},
+    xlabel={Aantal opslagen/recepties (AI)},
+    ylabel={Aantal opslagen/recepties (Manueel)},
     grid=major,
     legend style={at={(1.05,1)}, anchor=north west},
     width=12cm,
@@ -56,7 +51,6 @@ De AI heeft bij geen enkele receptie een score van 0 gegeven. Bij de manuele inv
     4 8
     3 3
     0 5
-    0 0
   };
   \addlegendentry{Receptie}
 
@@ -65,7 +59,6 @@ De AI heeft bij geen enkele receptie een score van 0 gegeven. Bij de manuele inv
   \node at (axis cs:4,8) [anchor=south, green!60!black] {2};
   \node at (axis cs:3,3) [anchor=south west, green!60!black] {1};
   \node at (axis cs:0,5) [anchor=east, green!60!black] {0};
-  \node at (axis cs:0,0) [anchor=north east, green!60!black] {?};
 
   \end{axis}
 \end{tikzpicture}

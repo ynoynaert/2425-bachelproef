@@ -1,21 +1,18 @@
 \subsubsection{Set 2 - Lindemans Aalst}
 \label{sec:PL3_Aalst2}
-%TODO: tekst aanpassen
-Figuur \ref{fig:PL3ServeReceiveAalst2} geeft de opslag- en receptiestatistieken weer. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
+Figuur \ref{fig:PL3ServeReceiveAalst2} geeft de opslag- en receptiestatistieken weer. 
 
-De perfecte opslagen worden door beide invoermethoden gelijk geregistreed. Bij de manuele invoer bevinden zich echter geen opslagen in de categorie met score 2. De opslagen zijn daar verdeeld over score 1 en 3. Er zijn meer opslagen die score 1 hebben gekregn dan bij de AI-invoer. Bij score 3 is dit ongeveer gelijk.
+De perfecte opslagen (0) zijn bij beide hetzelfde aantal weergegeven. Bij de andere opslagen valt op dat de AI meer score 2 geeft en de manuele meer score 1 en 3.
 
-De beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de receptie komt het teken \# overeen met 3, + en / met 2, ! met 1, - en = met 0.
-
-De AI heeft één receptie van Max Schulz niet kunnen beoordelen. Speler Bert Dufraing heeft volgens de AI ook maar één receptie genomen, tegenover de twee die manueel zijn ingevoerd. Bij veel spelers komt de perfecte receptie bij zowel manueel als AI-invoer overeen. De andere recepties worden echter opnieuw slechter beoordeeld door de manuele invoer.
+De AI heeft bij één receptie een score van 0 gegeven. Bij de manuele invoer is dit wel het geval voor drie recepties. Ook bij de andere scores wordt duidelijk dat de manuele invoer kritischer is dan de AI. De perfecte recepties (3) zijn wel gelijk. De AI heeft bij één receptie geen score kunnen geven, terwijl de manuele invoer dit wel heeft gedaan. Dit is te zien in de figuur.
 
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}
   \begin{axis}[
     title={Receptie- en opslagstatistieken van Lindemans Aalst in set 2},
-    xlabel={x (AI)},
-    ylabel={y (Manueel)},
+    xlabel={Aantal opslagen/recepties (AI)},
+    ylabel={Aantal opslagen/recepties (Manueel)},
     grid=major,
     legend style={at={(1.05,1)}, anchor=north west},
     width=12cm,
@@ -119,7 +116,7 @@ Het aantal spelverdelingen is bij beide invoermethoden gelijk. Het aantal verded
   \caption[Spelverdelings- en verdedigingsstatistieken gemaakt door Balltime AI voor Lindemans Aalst in set 2]{\label{tab:PL3SetDigAalstAI2}Spelverdelings- en verdedigingsstatistieken gemaakt door Balltime AI voor Lindemans Aalst in set 2.}
 \end{table}
 
-Bij de aanvalsstatistieken (door Balltime AI in tabel \ref{tab:PL3AttBlockAalstAI2} en manuele invoer in tabel \ref{tab:PL3AttAalstMan2}) is er bij één speler een verschillend aantal aanvallen geregistreed. Hiago Crins is heeft door de AI twee keer aangevallen, terwijl hij manueel gezien maar één keer heeft aangevallen.
+Bij de aanvalsstatistieken (door Balltime AI in tabel \ref{tab:PL3AttBlockAalstAI2} en manuele invoer in tabel \ref{tab:PL3AttAalstMan2}) is er bij één speler een verschillend aantal aanvallen geregistreerd. Hiago Crins is heeft door de AI twee keer aangevallen, terwijl hij manueel gezien maar één keer heeft aangevallen.
 
 De blokstatistieken (door Balltime AI in tabel \ref{tab:PL3AttBlockAalstAI2} en manuele invoer in tabel \ref{tab:PL3BlockAalstMan2}) zijn ook verschillend. De AI heeft twee aanvallen geregistreerd, terwijl er manueel zes aanvallen zijn geregistreerd. 
 

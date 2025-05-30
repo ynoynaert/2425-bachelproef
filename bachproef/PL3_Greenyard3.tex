@@ -1,21 +1,16 @@
 \subsubsection{Set 3 - Greenyard Maaseik}
 \label{sec:PL3_Greenyard3}
-%TODO: tekst aanpassen
-Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
+In figuur \ref{fig:PL3ServeMaaseik3} zijn de receptie- en opslagstatistieken weergegeven. Hier zijn het totaal aantal opslagen én perfecte opslagen (0) gelijk. Bij de andere scores zijn de opslagen ongeveer gelijk verdeeld. Buiten score 2 die niet werd gegeven door de manuele invoer, maar wel door de AI-invoer. Score 3 werd ook opmerkelijk meer gegeven door de scouter.
 
-In figuur \ref{fig:PL3ServeMaaseik3} zijn de receptie- en opslagstatistieken weergegeven. Hier zijn het totaal aantal opslagen én perfecte opslagen gelijk. Bij de andere scores zijn de opslagen ongeveer gelijk verdeeld.
-
-De beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de receptie komt het teken \# overeen met 3, + en / met 2, ! met 1, - en = met 0.
-
-Bij deze statistieken kan geconstateerd worden dat de AI-invoer bepaalde spelers niet heeft geregisteerd. Aan één speler heeft de AI ook een receptie meer gegeven dan de manuele invoer. Opmerkelijk is wel dat de manuele invoer hier voor bepaalde recepties positiever is. Er zijn meer opslagen met een score 3 bij de manuele invoer dan bij de AI.
+Opmerkelijk is wel dat de manuele invoer hier voor bepaalde recepties positiever is. Er zijn meer opslagen met een score 3 bij de manuele invoer dan bij de AI.
 
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}
   \begin{axis}[
     title={Receptie- en opslagstatistieken van Greenyard Maaseik in set 3},
-    xlabel={x (AI)},
-    ylabel={y (Manueel)},
+    xlabel={Aantal opslagen/recepties (AI)},
+    ylabel={Aantal opslagen/recepties (Manueel)},
     grid=major,
     legend style={at={(1.05,1)}, anchor=north west},
     width=12cm,

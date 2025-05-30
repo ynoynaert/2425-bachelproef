@@ -1,17 +1,17 @@
 \subsubsection{Set 2 - Lindemans Aalst}
 \label{sec:PL1_Aalst2}
-% TODO: tekst aanpassen
-In grafiek \ref{fig:PL1ServeReceiveAalst2} zijn de opslag- en receptiestatistieken van Lindemans Aalst in set 2 weergegeven. De beoordeling van de opslag is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3. Eerst en vooral valt op dat de AI niet alle recepties heeft beoordeeld. Daarnaast kan besloten worden dat zowel de AI als de scouter de perfecte receptie gelijk beoordelen. Bij de andere vergelijking speelt de mening van de scouter een grote rol. Bij score 1 zijn er grote verschillen, enkel bij speler Max Schulz is er een zelfde hoeveelheid. Score 2 werd door de scouter niet aan een opslag gegeven, maar de AI heeft dit wel gedaan. De slechte recepties worden ook opnieuw anders beoordeeld.
+In grafiek \ref{fig:PL1ServeReceiveAalst2} zijn de opslag- en receptiestatistieken van Lindemans Aalst in set 2 weergegeven. De beoordeling van de opslag is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3. In de grafiek zijn de manuele statistieken omgezet naar de beoordelingsmethode van de AI voor een gemakkelijkere vergelijking. 
+Eerst en vooral valt op dat de AI niet alle opslagen heeft beoordeeld. Daarnaast kan besloten worden dat zowel de AI als de scouter de perfecte opslagen (0) gelijk beoordelen. Er zijn ook even veel opslagen die door beide een score 2 hebben gekregen. Bij de andere vergelijkingen speelt de mening van de scouter een grote rol. De manuele invoer heeft meer score 1 aan de opslagen dan de AI. De slechte opslagen (3) worden ook opnieuw anders beoordeeld.
 
-De beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de receptie komt het teken \# overeen met 3, + en / met 2, ! met 1, - en = met 0. De AI heeft maar 1 opslag niet beoordeeld. Hier valt direct op dat de AI de recepties positiever heeft beoordeeld dan de scouter. Dit is te zien bij de score 0, waar de AI geen recepties heeft gegeven en de scouter 6. Score 3 werd door de scouter aan 1 opslag gegeven, maar de AI gaf dit aan 5.
+Ook de beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de receptie komt het teken \# overeen met 3, + en / met 2, ! met 1, - en = met 0. Ook hierbij zijn de manuele beoordelingen omgezet naar die van de AI voor een gemakkelijkere vergelijking. Hier valt direct op dat de AI de recepties positiever heeft beoordeeld dan de scouter. Dit is te zien bij de score 0, waar de AI geen recepties heeft gegeven en de scouter 6. Score 3 werd door de scouter aan 2 opslagen gegeven, maar de AI gaf dit aan 5. Score 1 was bij beide gelijk. Score 2 heeft de AI aan 6 recepties gegeven, terwijl de scouter er maar 3 heeft gegeven.
 
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}
   \begin{axis}[
     title={Receptie- en opslagstatistieken van Lindemans Aalst in set 2},
-    xlabel={x (AI)},
-    ylabel={y (Manueel)},
+    xlabel={Aantal opslagen/recepties (AI)},
+    ylabel={Aantal opslagen/recepties (Manueel)},
     grid=major,
     legend style={at={(1.05,1)}, anchor=north west},
     width=12cm,
@@ -65,9 +65,9 @@ De beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele 
 \label{fig:PL1ServeReceiveAalst2}
 \end{figure}
 
-Tabel \ref{tab:PL1SetAalstMan2}, \ref{tab:PL1DigAalstMan2} en \ref{tab:PL1SetDigAalstAI2} geven de setting en verdediging statistieken van Lindemans Aalst in set 2 weer. De eerste tabel toont de manueel ingevoerde statistieken van de spelverdeling, terwijl de derde tabel de statistieken toont die door Balltime AI zijn gegenereerd. De setting statistieken zijn onderverdeeld in verschillende categorieën, zoals het aantal sets, het percentage fouten en de effectiviteit van de set. Setter Lucas Lorente López heeft in deze set 19 sets gegeven volgens de scouter en 18 volgens de AI. Bij de andere spelers is dit aantal hetzelfde tussen AI en de manuele invoer. Ook hier is er een verschil op de weergave van de statistieken. = komt overeen met een Set Error (SE). Dit is bij beide hetzelfde. De kwaliteit van de set wordt bij de AI niet beoordeeld, waardoor geen verdere vergelijking mogelijk is.
+Tabel \ref{tab:PL1SetAalstMan2}, \ref{tab:PL1DigAalstMan2} en \ref{tab:PL1SetDigAalstAI2} geven de setting- en verdedigingsstatistieken van Lindemans Aalst in set 2 weer. De eerste tabel toont de manueel ingevoerde statistieken van de spelverdeling, terwijl de derde tabel de statistieken toont die door Balltime AI zijn gegenereerd. De settingstatistieken zijn onderverdeeld in verschillende categorieën, zoals het aantal sets, het percentage fouten en de effectiviteit van de set. Setter Lucas Lorente López heeft in deze set 19 sets gegeven volgens de scouter en 18 volgens de AI. Bij de andere spelers is dit aantal hetzelfde tussen AI en de manuele invoer. Ook hier is er een verschil op de weergave van de statistieken. = komt overeen met een Set Error (SE). Dit is bij beide hetzelfde. De kwaliteit van de set wordt bij de AI niet beoordeeld, waardoor geen verdere vergelijking mogelijk is.
 
-Bij de verdediging is er een groot verschil tussen de AI en de scouter. De AI heeft verschillende verdedigingen niet herkend, terwijl de scouter dit wel heeft gedaan. Dit is te zien bij bijvoorbeeld Hiago Crins, die 3 verdedigingen heeft gegeven, maar de AI heeft er maar 1 herkend.
+Bij de verdediging is er een groot verschil tussen de AI en de scouter. De AI heeft verschillende verdedigingen niet herkend, terwijl de scouter dit wel heeft gedaan. Dit is te zien bij bijvoorbeeld Hiago Crins, die 3 verdedigingen heeft gegeven, maar de AI heeft er maar 1 herkend. Bert Dufraing heeft volgens manuele invoer 2 verdedigingen gedaan, maar bij het bekijken van de beelden valt op dat hij eigenlijk maar 1 verdediging heeft gedaan. Hierbij is de AI dus correct.
 
 \begin{table}[ht!]
   \centering
@@ -117,7 +117,7 @@ Bij de verdediging is er een groot verschil tussen de AI en de scouter. De AI he
 
 Bij de aanval (tabel \ref{tab:PL1AttAalstMan2} en \ref{tab:PL1AttBlockAalstAI2}) is het totaal aantal aanvallen gelijk bij iedereen behalve één speler. Hij heeft een aanval minder gekregen door de AI. 
 
-Bij de blokstatistieken (tabel \ref{tab:PL1BlockAalstMan2} en \ref{tab:PL1AttBlockAalstAI2}) wordt er op een volledig andere manier naar gekeken. De AI geeft statistieken waar de speler deel kan zijn van een éénmans- of een meermansblok. Dit is bij de manuele invoer niet het geval. Hierdoor geeft de AI dus eigenlijk ook geen blokpunten aan de spelers. Ookal is dit wel belangrijke informatie.
+Bij de blokstatistieken (tabel \ref{tab:PL1BlockAalstMan2} en \ref{tab:PL1AttBlockAalstAI2}) wordt er op een volledig andere manier naar gekeken. De AI geeft statistieken waar de speler deel kan zijn van een éénmans- of een meermansblok. Dit is bij de manuele invoer niet het geval. Hierdoor geeft de AI dus eigenlijk ook geen blokpunten aan de spelers. Ook al is dit wel belangrijke informatie.
 
 De aanvallen en bloks worden door de AI niet beoordeeld op kwaliteit.
 
