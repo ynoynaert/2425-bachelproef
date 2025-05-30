@@ -1,70 +1,73 @@
 \subsubsection{Set 3 - Greenyard Maaseik}
 \label{sec:PL3_Greenyard3}
+%TODO: tekst aanpassen
 Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
 
-Bij deze tabelen \ref{tab:PL3ReceiveMaaseikMan3} en \ref{tab:PL3ReceiveMaaseikAI3} zijn de receptiestatistieken weergegeven. Hier zijn het totaal aantal opslagen én perfecte opslagen gelijk. Bij de andere scores zijn de opslagen ongeveer gelijk verdeeld.
-
-\begin{table}[ht!]
-    \centering
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline
-        \textbf{Speler} & *E\% & Tot & = & / & - & ! & + & \#\\ \hline
-        Samuel Fafchamps & 0\% & 3 &  &  & 3 &  &  &  \\ 
-        Renet Vancker & 0\% & 1 &  &  & 1 &  &  & \\ 
-        Jolan Cox & 25\% & 4 &  &  & 3 &  &  & 1 \\ 
-        Dawid Pawlun & 50\% & 2 &  &  & 1 &  & 1 &  \\ 
-        Miquel Angel Fornés & 25\% & 4 &  &  & 3 &  & 1 &  \\ 
-        Hampus Ekstrand & 50\% & 4 & 1 &  &  &  & 2 & 1 \\ 
-        Pierre Perin & 0\% & 2 & 1 &  &  &  & 1 &  \\ \hline
-    \end{tabular}
-    \caption[Manueel ingevoerde opslagstatistieken voor Greenyard Maaseik in set 3]{\label{tab:PL3ServeMaaseikMan3}Manueel ingevoerde opslagstatistieken voor Greenyard Maaseik in set 3.}
-\end{table}
-
-\begin{table}[ht!]
-  \centering
-  \scriptsize
-  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Speler} & SA & SE & TA & Pct & Eff & Rtg & 0 & 1 & 2 & 3 \\ \hline
-    Samuel Fafchamps &  &  & 3 & 100\% & 0.00 & 2.67 &   &  & 1 & 2  \\
-    Renet Vancker &  &  & 1 & 100\% & 0.00 & 3.00 &  &  &  & 1 \\
-    Jolan Cox & 1 &  & 4 & 100\% & 0.25 & 1.50 & 1 & 1 & 1 & 1 \\
-    Dawid Pawlun &  &  & 2 & 100\% & 0.00 & 3.00 &   &   & & 1 \\
-    Miquel Angel Fornés & 1 & 1 & 4 & 75\% & 0.00 & 2.00 &   & 1 & 2 & 1 \\
-    Hampus Ekstrand & 1 & 1 & 4 & 75\% & 0.00 & 1.50 & 1 & 1 & 1 & 1\\
-    Pierre Perin & & 1 & 2 & 50\% & -0.50 & 2.5 &   &  & 1 & 1 \\ \hline
-  \end{tabular}
-  \caption[Opslagstatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL3ServeMaaseikAI3}Opslag statistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
-\end{table}
+In figuur \ref{fig:PL3ServeMaaseik3} zijn de receptie- en opslagstatistieken weergegeven. Hier zijn het totaal aantal opslagen én perfecte opslagen gelijk. Bij de andere scores zijn de opslagen ongeveer gelijk verdeeld.
 
 De beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de receptie komt het teken \# overeen met 3, + en / met 2, ! met 1, - en = met 0.
 
-Bij deze statistieken (tabellen \ref{tab:PL3ReceiveMaaseikMan3} en \ref{tab:PL3ReceiveMaaseikAI3}) kan geconstateerd worden dat de AI-invoer bepaalde spelers niet heeft geregisteerd. Aan één speler heeft de AI ook een receptie meer gegeven dan de manuele invoer. Opmerkelijk is wel dat de manuele invoer hier voor bepaalde recepties positiever is. Er zijn meer opslagen met een score 3 bij de manuele invoer dan bij de AI.
+Bij deze statistieken kan geconstateerd worden dat de AI-invoer bepaalde spelers niet heeft geregisteerd. Aan één speler heeft de AI ook een receptie meer gegeven dan de manuele invoer. Opmerkelijk is wel dat de manuele invoer hier voor bepaalde recepties positiever is. Er zijn meer opslagen met een score 3 bij de manuele invoer dan bij de AI.
 
-\begin{table}[ht!]
-    \centering
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline
-        \textbf{Speler} & *E\% & Tot & = & / & - & ! & + & \#\\ \hline
-        Jolan Cox & -100\% & 1 & 1 &  &  &  &  & \\ 
-        Landon Douglas Currie & 62\% & 8 &  &  & 1 & 2 & 1 & 4 \\ 
-        Dawid Pawlun & -100\% & 1 &  & 1 &  &  &  &  \\ 
-        Hampus Ekstrand & 100\% & 2 &  &  &  &  & 1 & 1 \\ 
-        Pierre Perin & 38\% & 8 & 2 &  & 1 &  & 1 & 4 \\ \hline
-    \end{tabular}
-    \caption[Manueel ingevoerde receptiestatistieken voor Greenyard Maaseik in set 3]{\label{tab:PL3ReceiveMaaseikMan3}Manueel ingevoerde receptiestatistieken voor Greenyard Maaseik in set 3.}
-\end{table}
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+  \begin{axis}[
+    title={Receptie- en opslagstatistieken van Greenyard Maaseik in set 3},
+    xlabel={x (AI)},
+    ylabel={y (Manueel)},
+    grid=major,
+    legend style={at={(1.05,1)}, anchor=north west},
+    width=12cm,
+    height=10cm,
+    enlargelimits=0.1,
+  ]
 
-\begin{table}[ht!]
-  \centering
-  \scriptsize
-  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Speler} & 3 & 2 & 1 & 0 & TA & Pass\% & PP\% & GP\% \\ \hline
-    Landon Douglas Currie & 3 & 3 & 2 &  & 8 & 2.12 & 38\% & 75\% \\
-    Hampus Ekstrand & 1 & 1 &   & 2 & & 1.5 & 0\% & 50\% \\
-    Pierre Perin & 6 & 1 &   & 2 & 9 & 2.22 & 67\% & 78\% \\ \hline
-  \end{tabular}
-  \caption[Receptiestatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL3ReceiveMaaseikAI3}Receptiestatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
-\end{table}
+  % Opslag
+  \addplot[
+    only marks,
+    mark=*,
+    color=purple,
+  ] table {
+    x y
+    2 2
+    3 5
+    6 0
+    8 13
+  };
+  \addlegendentry{Opslag}
+
+  % Labels opslag
+  \node at (axis cs:2,2) [anchor=north east, purple] {0};
+  \node at (axis cs:3,5) [anchor=south west, purple] {1};
+  \node at (axis cs:6,0) [anchor=north, purple] {2};
+  \node at (axis cs:8,13) [anchor=south east, purple] {3};
+
+  % Receptie
+  \addplot[
+    only marks,
+    mark=*,
+    color=green!60!black,
+  ] table {
+    x y
+    10 9
+    5 4
+    2 2
+    4 5
+  };
+  \addlegendentry{Receptie}
+
+  % Labels receptie
+  \node at (axis cs:10,9) [anchor=west, green!60!black] {3};
+  \node at (axis cs:5,4) [anchor=south east, green!60!black] {2};
+  \node at (axis cs:2,2) [anchor=south west, green!60!black] {1};
+  \node at (axis cs:4,5) [anchor=south, green!60!black] {0};
+
+  \end{axis}
+\end{tikzpicture}
+\caption{AI invoer versus manuele invoer, ingedeeld in opslag en receptie, voor Greenyard Maaseik in set 3.}
+\label{fig:PL3ServeMaaseik3}
+\end{figure}
 
 De spelverdelingsstatistieken zijn te vinden in tabel \ref{tab:PL3SetMaaseikMan3} en \ref{tab:PL3SetDigMaaseikAI3}. Die van de verdeding zijn dan weer te vinden in tabel \ref{tab:PL3DigMaaseikMan3} en \ref{tab:PL3SetDigMaaseikAI3}. 
 

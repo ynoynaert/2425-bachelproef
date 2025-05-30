@@ -1,74 +1,72 @@
 \subsubsection{Set 3 - Greenyard Maaseik}
 \label{sec:PL1_Greenyard3}
-
-Voor de opslagen worden tabellen \ref{tab:PL1ServeMaaseikMan3} en \ref{tab:PL1ServeMaaseikAI3} bekeken. De beoordeling van de opslag is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
+%TODO: tekst aanpassen
+Voor de opslagen en receptie wordt figuur \ref{fig:PL1ServeMaaseik3} bekeken. De beoordeling van de opslag is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
 Het aantal opslagen is bij beide hetzelfde getal. Ook de gemiste en perfecte opslagen zijn gelijk. De AI-invoer is echter veel minder kritisch dan de manuele invoer.
 
-\begin{table}[ht!]
-    \centering
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline
-        \textbf{Speler}& *E\% & Tot & = & / & - & ! & + & \#\\ \hline
-        Samuel Fafchamps  & -33\% & 3 & 1 &  &  & 2 &  &  \\ 
-        Jolan Cox  & -33\% & 3 & 2 &  & 1 &  &  &  \\ 
-        Dawid Pawlun & 0\% & 2 &  &  & 2 &  &  &  \\
-        Tijmen Bus & -100\% & 1 & 1 &  &  &  &  &  \\ 
-        Miquel Angel Fornés & 100\% & 3 &  &  &  &  & 2 & 1 \\ 
-        Hampus Ekstrand & 50\% & 2 &  &  & 1 &  &  & 1 \\ 
-        Pierre Perin & 25\% & 4 & 1 &  & 1 &  &  & 2 \\ \hline
-    \end{tabular}
-    \caption[Manueel ingevoerde opslagstatistieken voor Greenyard Maaseik in set 3]{\label{tab:PL1ServeMaaseikMan3}Manueel ingevoerde opslagstatistieken voor Greenyard Maaseik in set 3.}
-\end{table}
+De manuele invoer heeft de recepties beoordeeld met de tekens \# overeen met 3, + en / met 2, ! met 1, - en = met 0. Op het eerste zicht valt op dat er een andere hoeveelheden recepties zijn geregisteerd bij sommige spelers. Opnieuw valt ook weer op dat de manuele invoer kritischer is dan de AI-invoer. Één opslag is ook niet gequoteerd geweest door de AI.
 
-\begin{table}[ht!]
-  \centering
-  \scriptsize
-  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Speler} & SA & SE & TA & Pct & Eff & Rtg & 0 & 1 & 2 & 3  \\ \hline
-    Samuel Fafchamps &  & 1 & 3 & 67\% & -0.33 & 2.33 &   &   & 2 & 1 \\
-    Jolan Cox &  & 2 & 3 & 33\% & -0.67 & 2.33 &   & 1 &   & 2 \\
-    Dawid Pawlun &  &  & 2 & 100\% & 0.00 & 1.50 &   & 1 & 1 &  \\
-    Tijmen Bus &  & 1 & 1 & 0\% & -1.00 & 3.00 &   & &   &  1 \\
-    Miquel Angel Fornés & 1 &  & 3 & 100\% & 0.33 & 1.33 & 1 & 1 &   & 1 \\
-    Hampus Ekstrand & 1 &  & 2 & 100\% & 0.50 & 1.00 & 1 &   & 1 &  \\
-    Piere Perin & 2 & 1 & 4 & 75\% & 0.25 & 1.5 & 2 &   &   & 2 \\ \hline
-  \end{tabular}
-  \caption[Opslagstatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1ServeMaaseikAI3}Opslagstatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
-\end{table}
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+  \begin{axis}[
+    title={Receptie- en opslagstatistieken van Greenyard Maaseik in set 3},
+    xlabel={x (AI)},
+    ylabel={y (Manueel)},
+    grid=major,
+    legend style={at={(1.05,1)}, anchor=north west},
+    width=12cm,
+    height=10cm,
+    enlargelimits=0.1,
+  ]
 
-De recepties worden in tabellen \ref{tab:PL1ReceiveMaaseikMan3} en \ref{tab:PL1ReceiveMaaseikAI3} weergegeven. De manuele invoer heeft de recepties beoordeeld met de tekens \# overeen met 3, + en / met 2, ! met 1, - en = met 0. Op het eerste zicht valt op dat er een andere hoeveelheden recepties zijn geregisteerd bij sommige spelers. Opnieuw valt ook weer op dat de manuele invoer kritischer is dan de AI-invoer. Één opslag is ook niet gequoteerd geweest door de AI.
+  % Opslag (paars)
+  \addplot[
+    only marks,
+    mark=*,
+    color=purple,
+  ] table {
+    x y
+    4 4
+    3 2
+    4 2
+    7 10
+  };
+  \addlegendentry{Opslag}
 
-\begin{table}[ht!]
-  \centering
-  \scriptsize
-  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
-    \hline
-    \textbf{Speler}& *E\% & Tot & = & / & - & ! & + & \#\\ \hline
-    Andris Sirjakovs & 0\% & 2 &  &  &  & 2 &  &  \\ 
-    Jolan Cox & -100\% & 1 &  & 1 &  &  &  &  \\
-    Landon Douglas Currie & 60\% & 5 &  &  &  & 2 & 2 & 1 \\
-    Tijmen Bus & -100\% & 1 &  & 1 &  &  &  &  \\ 
-    Miquel Angel Fornés & 0\% & 1 &  &  & 1 &  &  &  \\ 
-    Hampus Ekstrand & 17\% & 6 & 1 &  & 2 & 3 &  &  \\ 
-    Pierre Perin & 29\% & 7 &  &  & 4 & 1 & 1 & 1 \\ \hline
-  \end{tabular}
-  \caption[Manueel ingevoerde receptiestatistieken voor Greenyard Maaseik in set 3]{\label{tab:PL1ReceiveMaaseikMan3}Manueel ingevoerde receptiestatistieken voor Greenyard Maaseik in set 3.}
-\end{table}
+  % Labels opslag
+  \node at (axis cs:4,4) [anchor=south west, purple] {0};
+  \node at (axis cs:3,2) [anchor=north east, purple] {1};
+  \node at (axis cs:4,2) [anchor=south east, purple] {2};
+  \node at (axis cs:7,10) [anchor=south west, purple] {3};
 
-\begin{table}[ht!]
-  \centering
-  \scriptsize
-  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Speler} & 3 & 2 & 1 & 0 & TA & ? & Pass\% & PP\% & GP\% \\ \hline
-    Andris Sirjakovs &  & 2 &  &  & 2 &  & 2.00 & 0\% & 100\% \\
-    Landon Douglas Currie & 2 & 2 & 1 &  & 5 &  & 2.20 & 40\% & 80\% \\
-    Tijmen Bus &  &  & 1 &  & 2 & 1 & 1.00 & 0\% & 0\% \\
-    Miquel Angel Fornés &   &  & 1 &  & 1 &  & 1.00 & 0\% & 0\% \\
-    Hampus Ekstrand &  & 2 & 3 & 1 & 6 &  & 1.17 & 0\% & 33\% \\
-    Piere Perin & 1 & 1 & 4 &  & 6 &  & 1.50 & 17\% & 33\% \\ \hline
-  \end{tabular}
-  \caption[Receptiestatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3]{\label{tab:PL1ReceiveMaaseikAI3}Receptiestatistieken gemaakt door Balltime AI voor Greenyard Maaseik in set 3.}
-\end{table}
+  % Receptie (groen)
+  \addplot[
+    only marks,
+    mark=*,
+    color=green!60!black,
+  ] table {
+    x y
+    3 2
+    7 5
+    10 8
+    1 8
+    1 0
+  };
+  \addlegendentry{Receptie}
+
+  % Labels receptie
+  \node at (axis cs:3,2) [anchor=north west, green!60!black] {3};
+  \node at (axis cs:7,5) [anchor=south west, green!60!black] {2};
+  \node at (axis cs:10,8) [anchor=west, green!60!black] {1};
+  \node at (axis cs:1,8) [anchor=east, green!60!black] {0};
+  \node at (axis cs:1,0) [anchor=north, green!60!black] {?};
+
+  \end{axis}
+\end{tikzpicture}
+\caption{AI invoer versus manuele invoer, ingedeeld in opslag en receptie, voor Greenyard Maaseik in set 3.}
+\label{fig:PL1ServeMaaseik3}
+\end{figure}
 
 In tabellen \ref{tab:PL1SetMaaseikMan3} en \ref{tab:PL1SetDigMaaseikAI3} wordt de spelverdeling weergegeven. De hoeveelheden zijn hier zeer verschillend. Bij sommige spelers geeft de manuele invoer ze meer, bij andere dan weer meer door de AI. Volgens manuele invoer heeft Jolan Cox ook vijf keer aan spelverdeling gedaan, terwijl dit door AI geen enkele keer was. Dawid Pawlun heeft door de AI 17 keer aan spelverdeling gedaan, terwijl dit manueel maar 14 keer was. Dit is een verschil van 3. Dit is een groot verschil, maar het kan zijn dat de AI deze als spelverdeling heeft gezien, terwijl dit manueel niet zo was.
 

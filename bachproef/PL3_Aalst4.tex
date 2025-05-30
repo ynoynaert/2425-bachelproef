@@ -1,75 +1,77 @@
 \subsubsection{Set 4 - Lindemans Aalst}
 \label{sec:PL3_Aalst4}
-
-De opslagstatistieken zijn weergegeven in de tabel \ref{tab:PL3ServeAalstMan4} en \ref{tab:PL3ServeAalstAI4}. 
+%TODO: tekst aanpassen
+De opslag- en recetpiestatistieken zijn weergegeven in figuur \ref{fig:PL3ServeReceiveAalst4}. 
 
 Bij de opslag komt het teken \# overeen met 0, + en / met 1, ! met 2, - en = met 3.
 
 De foutieve opslagen, bij manuele invoer een = en bij AI-invoer een Serve Error (SE), zijn correct weergegeven.  Ook de perfecte opslag is hetzelfde. Bij de andere opslagen valt op dat de AI meer score 2 geeft en de manuele meer score 1.
 
-\begin{table}[ht!]
-    \centering
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-        \hline
-        \textbf{Speler} & *E\% & Tot & = & / & - & ! & + & \# \\ \hline
-        Timo Lohmus & 100\% & 1 &  &  & & & 1 &  \\
-        Berre Peters & -50\% & 2 & 1 &  & 1 &  & & \\ 
-        Max Schulz & 0\% & 2 & 1 &  &  &  & 1 &\\ 
-        Nezar Harouk & 50\% & 4 &  &  & 2 & & 2 &  \\ 
-        Mihkel Varblane & 25\% & 4 & 1 &  & 1 &  & 1 & 1\\
-        Alvaro Gimeno Rubio & -100\% & 3 & 3 &  &  &  &  & \\ 
-        Lucas Lorente Lòpez & 33\% & 3 &  &  & 2 & & 1 &  \\ \hline
-    \end{tabular}
-    \caption[Manueel ingevoerde opslagstatistieken voor Lindemans Aalst in set 4]{\label{tab:PL3ServeAalstMan4}Manueel ingevoerde opslagstatistieken voor Lindemans Aalst in set 4.}
-\end{table}
-
-\begin{table}[ht!]
-  \centering
-  \scriptsize
-  \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Speler} & SA & SE & TA & Pct & Eff & Rtg & 0 & 1 & 2 & 3  \\ \hline
-    Timo Lohmus &  &  & 1 & 100\% & 0.00 & 2.00 &   & &  1 &  \\
-    Berre Peters &  & 1 & 2 & 50\% & -0.50 & 2.50 &   &  & 1 & 1 \\
-    Max Schulz &  & 1 & 2 & 50\% & -0.50 & 2.50 &   &  & 1 & 1 \\
-    Nezar Harouk &  &  & 4 & 100\% & 0.00 & 2.25 &   & 1 & 1 & 2 \\
-    Mihkel Varblane & 1 & 1 & 4 & 75\% & 0.00 & 1.33 & 1 & 1 &   & 1 \\
-    Alvaro Gimeno Rubio &  & 3 & 3 & 0\% & -1.00 & 3.00 &   &   &  & 3  \\
-    Lucas Lorente Lòpez &  &  & 3 & 100\% & 0.00 & 2.00 &   &  &  1 &  \\\hline
-  \end{tabular}
-  \caption[Opslagstatistieken gemaakt door Balltime AI voor Lindemans Aalst in set 4]{\label{tab:PL3ServeAalstAI4}Opslagstatistieken gemaakt door Balltime AI voor Lindemans Aalst in set 4.}
-\end{table}
-
-De beoordeeldingen van de recepties zijn weergeven in tabel \ref{tab:PL3ReceiveAalstMan4} en \ref{tab:PL3ReceiveAalstAI4}.
-
 De beoordeling van de receptie is op een andere wijze gedaan dan bij de manuele invoer. Bij de manuele invoer wordt er gebruik gemaakt van tekens, terwijl bij de AI-invoer gebruik wordt gemaakt van cijfers. Bij de receptie komt het teken \# overeen met 3, + en / met 2, ! met 1, - en = met 0.
 
 De AI heeft bij geen enkele receptie een score van 0 gegeven. Bij de manuele invoer is dit wel het geval voor vijf recepties. Ook bij de andere scores wordt duidelijk dat de manuele invoer kritischer is dan de AI.
 
-\begin{table}[ht!]
-    \centering
-    \scriptsize
-    \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-        \hline
-        \textbf{Speler} & *E\% & Tot & = & / & - & ! & + & \# \\ \hline
-        Bert Dufraing & 50\% & 4 &  &  & 1 & 1 & 1 & 1\\ 
-        Berre Peters & 55\% & 11 & & 1 & 2 & 1 & 6 & 1 \\ 
-        Max Schulz & -33\% & 3 & 1 &  & 1 & 1 &  & \\ \hline
-    \end{tabular}
-    \caption[Manueel ingevoerde receptiestatistieken voor Lindemans Aalst in set 4]{\label{tab:PL3ReceiveAalstMan4}Manueel ingevoerde receptiestatistieken voor Lindemans Aalst in set 4.}
-\end{table}
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+  \begin{axis}[
+    title={Receptie- en opslagstatistieken van Lindemans Aalst in set 4},
+    xlabel={x (AI)},
+    ylabel={y (Manueel)},
+    grid=major,
+    legend style={at={(1.05,1)}, anchor=north west},
+    width=12cm,
+    height=10cm,
+    enlargelimits=0.1,
+  ]
 
-\begin{table}[ht!]
-  \centering
-  \scriptsize
-    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline
-    \textbf{Speler} & 3 & 2 & 1 & 0 & TA & Pass\% & PP\% & GP\% \\ \hline
-    Bert Dufraing & 2 & 1 & 1 &   & 4 & 2.25 & 50\% & 75\% \\  
-    Berre Peters & 6 & 4 & 2 &  & 12 & 2.33 & 50\% & 83\% \\
-    Max Schulz &   &  &  1 &  & 1 & 1.00 & 0\% & 0\% \\\hline
-  \end{tabular}
-  \caption[Receptiestatistieken gemaakt door Balltime AI voor Lindemans Aalst in set 4]{\label{tab:PL3ReceiveAalstAI4}Receptiestatistieken gemaakt door Balltime AI voor Lindemans Aalst in set 4.}
-\end{table}
+  % Opslag
+  \addplot[
+    only marks,
+    mark=*,
+    color=purple,
+  ] table {
+    x y
+    1 1
+    2 6
+    5 0
+    8 12
+  };
+  \addlegendentry{Opslag}
+
+  % Labels opslag
+  \node at (axis cs:1,1) [anchor=north east, purple] {0};
+  \node at (axis cs:2,6) [anchor=south west, purple] {1};
+  \node at (axis cs:5,0) [anchor=north, purple] {2};
+  \node at (axis cs:8,12) [anchor=south east, purple] {3};
+
+  % Receptie
+  \addplot[
+    only marks,
+    mark=*,
+    color=green!60!black,
+  ] table {
+    x y
+    6 2
+    4 8
+    3 3
+    0 5
+    0 0
+  };
+  \addlegendentry{Receptie}
+
+  % Labels receptie
+  \node at (axis cs:6,2) [anchor=north west, green!60!black] {3};
+  \node at (axis cs:4,8) [anchor=south, green!60!black] {2};
+  \node at (axis cs:3,3) [anchor=south west, green!60!black] {1};
+  \node at (axis cs:0,5) [anchor=east, green!60!black] {0};
+  \node at (axis cs:0,0) [anchor=north east, green!60!black] {?};
+
+  \end{axis}
+\end{tikzpicture}
+\caption{AI invoer versus manuele invoer, ingedeeld in opslag en receptie, voor Lindemans Aalst in set 4.}
+\label{fig:PL3ServeReceiveAalst4}
+\end{figure}
 
 In tabel \ref{tab:PL3SetAalstMan4} en \ref{tab:PL3DigAalstMan4} zijn de manueel ingevoerde spelverdelings- en verdedigingsstatistieken weergegeven. De statistieken van de AI zijn weergegeven in tabel \ref{tab:PL3SetDigAalstAI4}.
 Bij de spelverdelingsstatistieken valt op dat Max Schulz een actie meer heeft bij de AI-invoer dan bij de manuele invoer. Bij het bekijken van de video valt dan wel op dat hij effectief een actie meer heeft uitgevoerd. 
